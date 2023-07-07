@@ -1,0 +1,111 @@
+@charset "utf-8";
+body{
+    font-family: 'SUITE', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    box-sizing: border-box;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    z-index: 10000;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header h1 a{
+    text-indent: -99999px;
+    display: block;
+    width: 72px;
+    height: 32px;
+    background: url("../images/logo/logo_zion.png")no-repeat;
+}
+
+header ul.gnb{
+    display: flex;
+    gap: 50px;
+}
+
+header ul.gnb li a{
+    color: #fff;
+    font-weight: 500;
+}
+
+/* -------------------------section1-------------------------- */
+#home{
+    background: url("../images/bg/cloud.png")no-repeat;
+    text-align: center;
+}
+
+#home .my{
+    color: #FFF;
+    font-size: 80px;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 315px;
+}
+
+#home h2{
+    color: #FFF;
+    font-size: 200px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#home .line{
+    background: #fff;
+    width: 1100px;
+    height: 3px;
+    margin: 35px 410px;
+}
+
+#home .slogan{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+#home .arrow{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon/arrow.png") no-repeat center;
+}
+
+/* -------------------------section2---------------------------- */
+#about{
+    background: #fff;
+}
+
+#about h2{
+    color: #333;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 110px;
+}
+
+/* -------------------------section3--------------------------- */
+#section3{
+    background: aqua;
+}
+#section4{
+    background: url("../images/bg/cloud_dark.png")no-repeat;
+}
