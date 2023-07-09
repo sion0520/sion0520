@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body{
     font-family: 'SUITE', sans-serif;
 }
@@ -38,9 +39,15 @@ header ul.gnb li a{
     font-weight: 500;
 }
 
+.inner{
+    width: 1100px;
+    margin: 0 auto;
+}
+
 /* -------------------------section1-------------------------- */
 #home{
     background: url("../images/bg/cloud.png")no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
@@ -63,7 +70,10 @@ header ul.gnb li a{
     background: #fff;
     width: 1100px;
     height: 3px;
-    margin: 35px 410px;
+    position: absolute;
+    left: 50%;
+    top: 630px;
+    transform: translateX(-50%)
 }
 
 #home .slogan{
@@ -91,21 +101,140 @@ header ul.gnb li a{
 /* -------------------------section2---------------------------- */
 #about{
     background: #fff;
+    position: relative;
 }
 
-#about h2{
+#about .inner{
+    /* border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    height: 100%;
+}
+
+#about .inner h2{
     color: #333;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-top: 110px;
+    text-align: center;
+}
+
+#about .inner .photo{
+    margin-top: 92px;
+}
+
+#about .inner .entire{
+    display: flex;
+}
+
+#about .inner ul.left{
+    margin-top: 25px;
+}
+
+#about .inner ul.left li{
+    color:#333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 33px;
+}
+
+#about .inner ul.right{
+    margin-top: 30px;
+}
+
+#about .inner ul.right li{
+    color: #333;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 20px 0 0 37px;
+}
+
+#about .inner p.intro{
+    color: #333;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    position: absolute;
+    left: 610px;
+    top: 400px;
+    z-index: 1;
+}
+
+#about .inner .cloud{
+    position: absolute;
+    left: 493px;
+    top: 334px;
+}
+
+#about .inner h3{
+    color: #333;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 23px;
+}
+
+#about .inner .skill{
+    border: 1px solid green;
+    width: 720px;
+
+    position: absolute;
+    right: 0;
+    top: 609px;
+}
+
+#about .inner .skill .wrap_program{
+    display: flex;
+}
+
+#about .inner .skill .wrap_program ul.program li{
+    margin-bottom: 10px;
+}
+
+#about .inner .skill .wrap_program ul.program li:last-child{
+    margin: 0;
+}
+
+#about .bg_about{
+    width: 100%;
+    height: 350px;
+    background: #BFCFEA;
+    position: absolute;
+    left: 0;
+    top: 235px;
 }
 
 /* -------------------------section3--------------------------- */
 #section3{
-    background: aqua;
+    background: #333;
 }
-#section4{
-    background: url("../images/bg/cloud_dark.png")no-repeat;
+/* -------------------------section4--------------------------- */
+#contact{
+    background: url("../images/bg/bg_contact.png")no-repeat;
+    background-size: cover;
 }
+
+#contact .inner{
+    border: 1px solid red;
+}
+
+#contact .inner h2{
+    color: #333;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 110px;
+    text-align: center;
+}
+
