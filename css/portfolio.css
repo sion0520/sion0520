@@ -55,15 +55,13 @@ header ul.gnb li a{
     color: #FFF;
     font-size: 80px;
     font-weight: 300;
-    line-height: normal;
-    margin-top: 315px;
+    margin-top: 250px;
 }
 
 #home h2{
     color: #FFF;
-    font-size: 200px;
+    font-size: 190px;
     font-weight: 300;
-    line-height: normal;
 }
 
 #home .line{
@@ -72,7 +70,7 @@ header ul.gnb li a{
     height: 3px;
     position: absolute;
     left: 50%;
-    top: 630px;
+    top: 530px;
     transform: translateX(-50%)
 }
 
@@ -84,8 +82,7 @@ header ul.gnb li a{
     text-align: center;
     font-size: 50px;
     font-weight: 900;
-    line-height: normal;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 #home .arrow{
@@ -115,9 +112,7 @@ header ul.gnb li a{
 #about .inner h2{
     color: #333;
     font-size: 50px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin-top: 110px;
     text-align: center;
 }
@@ -138,7 +133,6 @@ header ul.gnb li a{
     color:#333;
     font-size: 18px;
     font-weight: 500;
-    line-height: normal;
     margin-top: 33px;
 }
 
@@ -150,7 +144,6 @@ header ul.gnb li a{
     color: #333;
     font-size: 28px;
     font-weight: 500;
-    line-height: normal;
     margin: 20px 0 0 37px;
 }
 
@@ -158,10 +151,7 @@ header ul.gnb li a{
     color: #333;
     text-align: center;
     font-size: 28px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
-
     position: absolute;
     left: 610px;
     top: 400px;
@@ -177,16 +167,12 @@ header ul.gnb li a{
 #about .inner h3{
     color: #333;
     font-size: 28px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     margin-bottom: 23px;
 }
 
 #about .inner .skill{
-    border: 1px solid green;
     width: 720px;
-
     position: absolute;
     right: 0;
     top: 609px;
@@ -194,6 +180,7 @@ header ul.gnb li a{
 
 #about .inner .skill .wrap_program{
     display: flex;
+    gap: 40px;
 }
 
 #about .inner .skill .wrap_program ul.program li{
@@ -202,6 +189,81 @@ header ul.gnb li a{
 
 #about .inner .skill .wrap_program ul.program li:last-child{
     margin: 0;
+}
+
+/* stick */
+#about ul.program li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#about ul.program li .stick{
+    width: 275px;
+    height: 20px;
+    background: #BFCFEA;
+    border-radius: 20px;
+    text-indent: -99999px;
+}
+#about ul.program li .stick_html span{
+    display: block;
+    width: 90%;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    animation: ani_html 3s ease forwards;
+}
+
+#about ul.program li .stick_js span{
+    display: block;
+    width: 90%;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    animation: ani_js 3s ease forwards;
+}
+
+#about ul.program li .stick_jq span{
+    display: block;
+    width: 90%;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    animation: ani_jq 3s ease forwards;
+}
+
+#about ul.program li .stick_vue span{
+    display: block;
+    width: 90%;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    animation: ani_vue 3s ease forwards;
+}
+
+@keyframes ani_html{
+    0%{width:0;}
+    100%{width:90%}
+}
+@keyframes ani_js{
+    0%{width:0;}
+    100%{width:40%}
+}
+@keyframes ani_jq{
+    0%{width:0;}
+    100%{width:50%}
+}
+@keyframes ani_vue{
+    0%{width:0;}
+    100%{width:60%}
 }
 
 #about .bg_about{
@@ -214,9 +276,54 @@ header ul.gnb li a{
 }
 
 /* -------------------------section3--------------------------- */
-#section3{
+#work{
     background: #333;
 }
+
+#work h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 110px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#work .inner{
+    border: 1px solid #fff;
+}
+
+#work ul.tab{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+#work ul.tab li.on{
+    background: #fff;
+    border-radius:20px ;
+}
+
+#work ul.tab li.on a{
+    color: #333;
+}
+
+#work ul.tab li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+    display: block;
+    width: 245px;
+    border-radius:20px ;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+
+
 /* -------------------------section4--------------------------- */
 #contact{
     background: url("../images/bg/bg_contact.png")no-repeat;
