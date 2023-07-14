@@ -87,15 +87,20 @@ header ul.gnb li a{
 
 #home .arrow{
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 40px;
+    top: 75%;
     width: 40px;
     height: 40px;
-    background: url("../images/icon/arrow.png") no-repeat center;
+    animation: ani_arrow 3s ease infinite;
 }
 
-/* -------------------------section2---------------------------- */
+@keyframes ani_arrow{
+    0%{top: 75%;}
+    50%{top: 77%;}
+    100%{top: 75%;}
+}
+
+/* -------------------------about---------------------------- */
 #about{
     background: #fff;
     position: relative;
@@ -251,7 +256,7 @@ header ul.gnb li a{
 
 @keyframes ani_html{
     0%{width:0;}
-    100%{width:90%}
+    100%{width:90%;}
 }
 @keyframes ani_js{
     0%{width:0;}
@@ -275,7 +280,7 @@ header ul.gnb li a{
     top: 235px;
 }
 
-/* -------------------------section3--------------------------- */
+/* -------------------------work--------------------------- */
 #work{
     background: #333;
 }
@@ -322,6 +327,14 @@ header ul.gnb li a{
     text-align: center;
 }
 
+/* slider */
+.slider_p{
+    margin-top: 80px;
+    background: rgba(255,255,255,0.3);
+}
+.slider_p div{
+    border: 1px solid slateblue;
+}
 
 
 /* -------------------------section4--------------------------- */
