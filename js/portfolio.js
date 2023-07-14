@@ -5,6 +5,7 @@ $(function() {
 		scrollHorizontally: true,
 		keyboardScrolling: true,
 		navigation: true,
+
 	});
 
 
@@ -26,11 +27,17 @@ $(function() {
 	})
 
 	// 슬라이드
-	$('.slider_p').slick({
+	$('.slider').slick({
         // 슬라이드 옵션 설정
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+		dots:true,
+		centerMode: true,
+		centerPadding: '60px',
+
+
+
     });
 });
