@@ -36,8 +36,7 @@ $(function() {
 		dots:true,
 		centerMode: true,
 		centerPadding: '60px',
-
-
-
     });
+
+	
 });

@@ -160,7 +160,6 @@ header ul.gnb li a{
 }
 
 #about .inner p.intro{
-
     color: #333;
     text-align: center;
     font-size: 28px;
@@ -171,7 +170,6 @@ header ul.gnb li a{
     left: 360px;
     top: 400px;
     z-index: 1;
-    border: 1px solid seagreen;
 }
 
 #about .inner h3{
@@ -276,6 +274,7 @@ header ul.gnb li a{
     100%{width:60%}
 }
 
+
 #about.active .bg_about{
     width: 300%;
     position: absolute;
@@ -308,26 +307,35 @@ header ul.gnb li a{
     top: 0;
     margin-top: 235px;
     padding-top: 126px;
+    padding-right: 20px;
     box-sizing: border-box;
     width: 578px;
     height: 526px;
     z-index: 10;
     background: #333;
+    border: 1px solid #fff;
 }
 
 #work ul.tab li{
     position: relative;
-    text-align: right;
+    text-align: left;
+    margin-left: 410px;
 }
 
 #work ul.tab li.on::after{
     content: '';
     background: #5980C3;
-    width: 297px;
+    width: 296px;
     height: 5px;
     position: absolute;
     bottom: -10px;
-    left: 410px;
+    left: 0;
+    animation: border 1s ease;
+}
+
+@keyframes border{
+    0%{left: -410px;}
+    100%{left: 0px;}
 }
 
 #work ul.tab li a{
