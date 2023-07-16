@@ -50,13 +50,13 @@ $(function() {
 	
 
 	// 헤더 스크롤
-	$('.gnb li').click(function(){
-		let num = $(this).index()
-		console.log(num)
+	// $('.gnb li').click(function(){
+	// 	let num = $(this).index()
+	// 	console.log(num)
 
-		if(num==0){
-			$('body,html').animate({'scrollTop':0},800)
-		}
-	})
+	// 	if(num==0){
+	// 		$('body,html').animate({'scrollTop':0},800)
+	// 	}
+	// })
 
 });
