@@ -2513,9 +2513,9 @@
         */
         function removeMouseWheelHandler(){
             if (document.addEventListener) {
-                document.removeEventListener('mousewheel', MouseWheelHandler, false); //IE9, Chrome, Safari, Oper
-                document.removeEventListener('wheel', MouseWheelHandler, false); //Firefox
-                document.removeEventListener('MozMousePixelScroll', MouseWheelHandler, false); //old Firefox
+                document.removeEventListener('mousewheel', MouseWheelHandler,  { passive: false } ); //IE9, Chrome, Safari, Oper
+                document.removeEventListener('wheel', MouseWheelHandler, { passive: false } ); //Firefox
+                document.removeEventListener('MozMousePixelScroll', MouseWheelHandler, { passive: false } ); //old Firefox
             } else {
                 document.detachEvent('onmousewheel', MouseWheelHandler); //IE 6/7/8
             }
@@ -2544,12 +2544,12 @@
 
 
             if(support == 'DOMMouseScroll'){
-                document[ _addEventListener ](prefix + 'MozMousePixelScroll', MouseWheelHandler, false);
+                document[ _addEventListener ](prefix + 'MozMousePixelScroll', MouseWheelHandler, { passive: false } );
             }
 
             //handle MozMousePixelScroll in older Firefox
             else{
-                document[ _addEventListener ](prefix + support, MouseWheelHandler, false);
+                document[ _addEventListener ](prefix + support, MouseWheelHandler, { passive: false } );
             }
         }
 
