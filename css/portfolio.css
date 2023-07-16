@@ -292,28 +292,22 @@ header ul.gnb li a{
 
 /* -------------------------work--------------------------- */
 #work{
-    background: #333;
-}
-
-#work .inner{
-    position: relative;
-    border: 1px solid red;
-    z-index: 20;
+    background: #666 url("../images/bg/bg_work.png")no-repeat center left;
 }
 
 #work ul.tab{
+    width: 659px;
+    height: 408px;
     position: absolute;
     left: 0;
     top: 0;
     margin-top: 235px;
-    padding-top: 126px;
-    padding-right: 20px;
+    padding: 90px 79px 0 0;
     box-sizing: border-box;
-    width: 578px;
-    height: 526px;
-    z-index: 10;
+    
+    z-index: 2;
     background: #333;
-    border: 1px solid #fff;
+    /* border: 1px solid yellow; */
 }
 
 #work ul.tab li{
@@ -325,15 +319,15 @@ header ul.gnb li a{
 #work ul.tab li.on::after{
     content: '';
     background: #5980C3;
-    width: 296px;
+    width: 249px;
     height: 5px;
     position: absolute;
     bottom: -10px;
     left: 0;
-    animation: border 1s ease;
+    animation: underline .5s ease-in-out;
 }
 
-@keyframes border{
+@keyframes underline{
     0%{left: -410px;}
     100%{left: 0px;}
 }
@@ -348,55 +342,56 @@ header ul.gnb li a{
 
 /* slider */
 .slider{
-    width: 100%;
     margin-top:228px ;
-    border: 5px solid slateblue;
+    z-index: 1;
 }
-.slider div{
-    height: 526px;
-    /* background: skyblue; */
-}
-
-/* .slider_p div h3{
-    color: #fff;
-    z-index: 15;
-    font-size: 70px;
-    font-weight: 800;
-}
-
-.slider_p div h3 span{  
-    color: #5980C3;
-    font-size: 50px;
-    margin-right: 15px;
-} */
-
-
 
 .slick-slide{
-    /* background: silver; */
-    /* border: 1px solid #5980C3; */
-    margin-right: 45px;
-    margin-left: 45px;
-    
+    max-width: 725px;
+    height: 408px;
+    /* border: 1px solid red; */
 }
 
 .slick-slider img{
-    border-radius:16px ;
-    margin: 20% 10% 0 10%;
+    border-radius:16px;
+    margin: 10%;
     width: 80%;
-    height: 80%;
+}
+
+.slick-active{
+    width: 80%;
 }
 
 .slick-center{
-    width: 725px;
-    /* background: salmon;
-    border: 5px solid red; */
+    width: 100%;
+    height: 100%;
+    
 }
 
 .slick-center img{
     width: 100%;
-    height: 100%;
     margin: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 제목 커스텀 */
+.slider h3{
+    max-width: 725px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.slick-center h3{
+    opacity: 1;
+}
+
+.slider h3 span{  
+    color: #5980C3;
+    font-size: 50px;
+    margin-right: 10px;
 }
 
 /* 페이지버튼 커스텀 */
@@ -409,23 +404,47 @@ header ul.gnb li a{
     bottom:-80px;
 }
 
+.slick-dots button{
+    width: 40px;
+    height: 13px;
+    text-indent: -99999px;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.slick-active button{
+    width: 80px;
+    height: 13px;
+    background: #5980C3;
+}
+
 /* 화살표 커스텀 */
 .slick-arrow{
     z-index: 10;
     width: 48px;
     height: 48px;
+    width: 48px;
+    height: 48px;
+    text-indent: -99999px;
 }
+
 .slick-prev{
     position: absolute;
-    left: 762px;
+    left: 725px;
     bottom:-90px;
+    background: url("../images/icon/icon_slidearrow_left.png")no-repeat center center;
 }
+
 .slick-next{
     position: absolute;
     bottom: -90px;
-    right:762px;
+    right:725px;
+    background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
 }
 
+.slider_d{
+    display: none;
+}
 
 /* -------------------------section4--------------------------- */
 #contact{
@@ -472,9 +491,7 @@ header ul.gnb li a{
 
 #contact .inner h5{
     color: var(--unnamed, #5980C3);
-    font-family: SUITE;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: center;
