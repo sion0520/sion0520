@@ -296,7 +296,7 @@ header ul.gnb li a{
 }
 
 #work ul.tab{
-    width: 659px;
+    width: 657px;
     height: 408px;
     position: absolute;
     left: 0;
@@ -319,7 +319,7 @@ header ul.gnb li a{
 #work ul.tab li.on::after{
     content: '';
     background: #5980C3;
-    width: 249px;
+    width: 247px;
     height: 5px;
     position: absolute;
     bottom: -10px;
@@ -342,13 +342,14 @@ header ul.gnb li a{
 
 /* slider */
 .slider{
+    height: 408px;
     margin-top:228px ;
     z-index: 1;
 }
 
 .slick-slide{
     max-width: 725px;
-    height: 408px;
+    height: 408;
     /* border: 1px solid red; */
 }
 
@@ -371,12 +372,10 @@ header ul.gnb li a{
 .slick-center img{
     width: 100%;
     margin: 0;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* 제목 커스텀 */
 .slider h3{
-    max-width: 725px;
     color: #fff;
     font-size: 50px;
     font-weight: 800;
@@ -441,11 +440,6 @@ header ul.gnb li a{
     right:725px;
     background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
 }
-
-.slider_d{
-    display: none;
-}
-
 /* -------------------------section4--------------------------- */
 #contact{
     background: url("../images/bg/bg_contact.png")no-repeat;
