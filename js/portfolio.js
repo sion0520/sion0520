@@ -50,6 +50,7 @@ $(function() {
 	
 
 	// 헤더 스크롤
+<<<<<<< HEAD
 	$('h1').click(function(){
 		$('body,html').animate({'scrollTop':0},800)
 	})
@@ -57,6 +58,16 @@ $(function() {
 	$('.gnb li').click(function(){
 		let num = $(this).index()
 		console.log(num)
+=======
+	$('.gnb li').click(function(){
+		let num = $(this).index()
+		console.log(num)
+
+		if(num==0){
+			$('body,html').animate({'scrollTop':0},800)
+		}
+	})
+>>>>>>> parent of de0ce6d (addd)
 
 		if(num==0){
 			$('body,html').animate({'scrollTop':0},800)
