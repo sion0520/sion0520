@@ -50,6 +50,10 @@ $(function() {
 	
 
 	// 헤더 스크롤
+	$('h1').click(function(){
+		$('body,html').animate({'scrollTop':0},800)
+	})
+
 	$('.gnb li').click(function(){
 		let num = $(this).index()
 		console.log(num)
@@ -59,4 +63,6 @@ $(function() {
 		}
 	})
 
+
+	
 });
