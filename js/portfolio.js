@@ -5,12 +5,23 @@ $(function() {
 		scrollHorizontally: true,
 		keyboardScrolling: true,
 		navigation: true,
-
+		scrollBar: true
 	});
 
+	// 슬라이드
+	$('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 3000,
+		dots:true,
+		centerMode: true,
+		setPosition:0
+		// centerPadding: '60px',
+    });
 
-	
-	$('.slider_u').hide()
+	//탭메뉴-슬라이드 숨기기
+	$('.slider_u, .slider_d').hide()
 	//탭메뉴
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on')
@@ -39,26 +50,19 @@ $(function() {
 	
 
 	// 헤더 스크롤
-	// $('.gnb li').click(function(){
-	// 	let num = $(this).index()
-	// 	console.log(num)
+	$('h1').click(function(){
+		$('body,html').animate({'scrollTop':0},800)
+	})
 
-	// 	if(num==0){
-	// 		$('body,html').animate({'scrollTop':0},800)
-	// 	}
-	// })
+	$('.gnb li').click(function(){
+		let num = $(this).index()
+		console.log(num)
 
-	// 슬라이드
-	$('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-		dots:true,
-		centerMode: true,
-		setPosition:0
-		// centerPadding: '60px',
-    });
+		if(num==0){
+			$('body,html').animate({'scrollTop':0},800)
+		}
+	})
+
 
 	
 });
