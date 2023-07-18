@@ -213,6 +213,7 @@ header ul.gnb li a{
     border-radius: 20px;
     text-indent: -99999px;
 }
+
 #about.active ul.program li .stick_html span{
     display: block;
     width: 90%;
