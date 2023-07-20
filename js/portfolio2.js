@@ -38,4 +38,6 @@ $(function(){
 			$('.slider_d').show()
 		}
 	})
+
+
 })
