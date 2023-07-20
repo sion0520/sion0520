@@ -104,6 +104,55 @@ header ul.gnb li a{
     100%{margin-top: 30px;}
 }
 
+/* 구름 */
+#home .cloud1{
+    position: absolute;
+    right: 263px;
+    top:1000px;
+}
+
+#home .cloud2{
+    position: absolute;
+    left: 0;
+    top: 1477px;
+}
+
+#home .cloud3{
+    position: absolute;
+    right: 0;
+    top:1700px;
+}
+
+#home .introduce{
+    width: 100%;
+    height: 200px;
+    margin: 650px 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#home .introduce .mark_start{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#home .introduce .mark_end{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#home .introduce p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2.8px;
+}
+
 /* ----------------------about----------------------------- */
 #about{
     margin-top: 493px;
@@ -113,54 +162,6 @@ header ul.gnb li a{
 #about .inner{
     position: relative;
     /* border: 1px solid red; */
-}
-
-#about .cloud1{
-    position: absolute;
-    right: 263px;
-    top:-300px;
-}
-
-#about .cloud2{
-    position: absolute;
-    left: 0;
-    top: 100px;
-}
-
-#about .cloud3{
-    position: absolute;
-    right: 0;
-    top:300px;
-}
-
-#about .slogan{
-    width: 100%;
-    height: 200px;
-    margin: 500px 0;
-    padding-top: 80px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-#about .slogan .mark_start{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-}
-
-#about .slogan .mark_end{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-}
-
-#about .slogan p{
-    text-align: center;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: 2.8px;
 }
 
 #about h2{
@@ -251,72 +252,65 @@ header ul.gnb li a{
 
 #about ul.program li .stick_html span{
     display: block;
-    width: 90%;
+    width: 0;
     height: 18px;
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #BFCFEA;
     background: #5980C3;
     border-radius:20px ;
-    animation: ani_html 3s ease forwards;
+    transition: width ease 3s;
 }
 
 #about ul.program li .stick_js span{
     display: block;
-    width: 90%;
+    width: 0;
     height: 18px;
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #BFCFEA;
     background: #5980C3;
     border-radius:20px ;
-    animation: ani_js 3s ease forwards;
+    transition: width ease 3s;
 }
 
 #about ul.program li .stick_jq span{
     display: block;
-    width: 90%;
+    width: 0;
     height: 18px;
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #BFCFEA;
     background: #5980C3;
     border-radius:20px ;
-    animation: ani_jq 3s ease forwards;
+    transition: width ease 3s;
 }
 
 #about ul.program li .stick_vue span{
     display: block;
-    width: 90%;
+    width: 0;
     height: 18px;
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #BFCFEA;
     background: #5980C3;
     border-radius:20px ;
-    animation: ani_vue 2s ease forwards;
-}
-
-@keyframes ani_html{
-    0%{width:0;}
-    100%{width:90%;}
-}
-@keyframes ani_js{
-    0%{width:0;}
-    100%{width:40%}
-}
-@keyframes ani_jq{
-    0%{width:0;}
-    100%{width:50%}
-}
-@keyframes ani_vue{
-    0%{width:0;}
-    100%{width:60%}
+    transition: width ease 3s;
 }
 /* -------------------------motion------------------------------- */
-
 .motion {
     font-size: 100px;
     font-weight: 900;
     color: #333;
     -webkit-text-stroke: calc(0.005em + 3px) #BFCFEA;
+    margin: 300px 0;
 }
+
+.motion span{
+    white-space: nowrap;
+}
+
+.motion span:first-child{
+    background: #BFCFEA;
+    margin-left: 430px;
+}
+
 
 /* ------------------------work---------------------------- */
 #work{
