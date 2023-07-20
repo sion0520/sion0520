@@ -53,25 +53,6 @@ header ul.gnb li a{
     position: relative;
 }
 
-#home .cloud1{
-    position: absolute;
-    right: 263px;
-    top: -50px;
-}
-
-#home .cloud2{
-    position: absolute;
-    left: 0;
-    top: 580px;
-}
-
-#home .cloud3{
-    position: absolute;
-    right: 0;
-    top: 800px;
-    
-}
-
 #home .my{
     color: #FFF;
     font-size: 100px;
@@ -94,16 +75,6 @@ header ul.gnb li a{
     left: 0;
     bottom: 0;
     background: #fff;
-}
-
-#home .line{
-    background: #fff;
-    width: 1520px;
-    height: 3px;
-    position: absolute;
-    left: 50%;
-    top: 550px;
-    transform: translateX(-50%)
 }
 
 #home .slogan{
@@ -139,6 +110,29 @@ header ul.gnb li a{
     /* border: 1px solid yellow; */
 }
 
+#about .inner{
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#about .cloud1{
+    position: absolute;
+    right: 263px;
+    top:-300px;
+}
+
+#about .cloud2{
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+#about .cloud3{
+    position: absolute;
+    right: 0;
+    top:300px;
+}
+
 #about .slogan{
     width: 100%;
     height: 200px;
@@ -169,16 +163,32 @@ header ul.gnb li a{
     letter-spacing: 2.8px;
 }
 
+#about h2{
+    color: #FFF;
+    font-family: GangwonEduPower;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    display: inline-flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+    border-radius: 20px 20px 0px 0px;
+}
+
 #about .card{
-    width: 1260px;
-    height: 777px;
+    width: 1520px;
+    display: flex;
+    height: 801px;
+    padding: 90px 260px;
     margin: 0 auto;
-    padding: 90px 130px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     background: #555;
-    border-radius: 130px;
+    border-radius: 0px 100px 100px 100px;
 }
 
 #about .entire{
