@@ -59,23 +59,23 @@ $(function(){
 		console.log(scroll)
 
 		if(scroll==0 && scroll<2156){    // home 구간
-			$('.gnb li a').css({color:'#fff'}) 
-            $('.gnb li:eq(0) a').css({color:'red'})
+			$('.gnb li a').css({fontWeight:'300'}) 
+            $('.gnb li:eq(0) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})
 		}else if(scroll >= 2156 && scroll<3848){   // about 구간
-			$('.gnb li a').css({color:'#fff'}) 
-            $('.gnb li:eq(1) a').css({color:'red'})
+			$('.gnb li a').css({fontWeight:'300'}) 
+            $('.gnb li:eq(1) a').css({fontWeight:'900'})
 			$('.stick_html span').css({width:'90%'})
 			$('.stick_js span').css({width:'40%'})
 			$('.stick_jq span').css({width:'50%'})
 			$('.stick_vue span').css({width:'60%'})
 		}else if(scroll >= 3848 && scroll<4284){  // work 구간
-			$('.gnb li a').css({color:'#fff'}) 
-            $('.gnb li:eq(2) a').css({color:'red'})
+			$('.gnb li a').css({fontWeight:'300'}) 
+            $('.gnb li:eq(2) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})
 		}else if(scroll >= 4284){    // contact 구간
-			$('.gnb li a').css({color:'#fff'}) 
-            $('.gnb li:eq(3) a').css({color:'red'})
+			$('.gnb li a').css({fontWeight:'300'}) 
+            $('.gnb li:eq(3) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})
 		}
 

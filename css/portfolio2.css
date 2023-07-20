@@ -36,7 +36,7 @@ header ul.gnb{
 
 header ul.gnb li a{
     color: #fff;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .inner{
@@ -295,20 +295,30 @@ header ul.gnb li a{
 }
 /* -------------------------motion------------------------------- */
 .motion {
+    border: 1px solid red;
+    height: 200px;
     font-size: 100px;
     font-weight: 900;
     color: #333;
     -webkit-text-stroke: calc(0.005em + 3px) #BFCFEA;
     margin: 300px 0;
+    position: relative;
 }
 
-.motion span{
+.motion .up{
+    position: absolute;
     white-space: nowrap;
+    font-weight: 900;
+    left: 0;
+    background: yellow;
 }
 
-.motion span:first-child{
-    background: #BFCFEA;
-    margin-left: 430px;
+.motion .down{
+    font-weight: 900;
+    position: absolute;
+    white-space: nowrap;
+    left: -500px;
+    top: 100px;
 }
 
 
