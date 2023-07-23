@@ -3,7 +3,34 @@ body{
     font-family: 'SUITE', sans-serif;
     background: #333;
     color: #fff;
+    position: relative;
 }
+/* popup */
+.popup{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -173px;
+    display: flex;
+    justify-content: center;
+    padding: 3846px 0 0 0 ;
+}
+.popup .btn_close{
+    background: url("../images/icon/icon_close.png")no-repeat center center;
+    text-indent: -99999px;
+    width: 48px;
+    height: 48px;
+    margin-left: 100px;
+}
+.popup img{
+    width: 480px;
+    height: 1335px;
+}
+
+/* header */
 header{
     width: 100%;
     height: 50px;
@@ -95,7 +122,7 @@ header ul.gnb li a{
     height: 40px;
     animation: ani_arrow 3s ease infinite;
     position: absolute;
-    z-index: 100;
+    z-index: 5;
 }
 
 @keyframes ani_arrow{
@@ -445,7 +472,7 @@ header ul.gnb li a{
 
 /* 화살표 커스텀 */
 .slick-arrow{
-    z-index: 10;
+    z-index: 2;
     width: 48px;
     height: 48px;
     width: 48px;
@@ -466,6 +493,31 @@ header ul.gnb li a{
     right:725px;
     background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
 }
+
+/* pront */
+.pront{
+    /* border: 1px solid red; */
+    height: 408px;
+    margin-left: 660px;
+}
+.pront .item h3{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.pront .item h3 span{  
+    color: #5980C3;
+    font-size: 50px;
+    margin-right: 10px;
+}
+.pront .item a img{
+    border: 1px solid #fff;
+    width: 604px;
+    height: 338px;
+    border-radius:16px;
+}
+
 
 /* ---------------------------contact----------------------------- */
 #contact{
@@ -523,6 +575,9 @@ header ul.gnb li a{
 #contact ul.adress li:hover::before{
     width: 100%;
 }
+
+
+
 
 /* --------------------------footer----------------------- */
 footer{

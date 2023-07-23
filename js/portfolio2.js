@@ -12,7 +12,7 @@ $(function(){
     });
 
     //슬라이드 숨기기
-	$('.slider_u, .slider_d, .slider_pront').hide()
+	$('.slider_u, .slider_d, .slider_pront, .pront').hide()
 	//탭메뉴
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on')
@@ -24,16 +24,17 @@ $(function(){
 		console.log(filter)
 
 		if(filter==0){
-			$('.slider_u, .slider_d, .slider_pront').hide()
+			$('.slider_u, .slider_d, .slider_pront, .pront').hide()
 			$('.slider_p').show()
 		}else if(filter==1){
-			$('.slider_p, .slider_d, .slider_pront').hide()
+			$('.slider_p, .slider_d, .slider_pront, .pront').hide()
 			$('.slider_u').show()
 		}else if(filter==2){
 			$('.slider_p, .slider_u, .slider_d').hide()
-            $('.slider_pront').show()
+            // $('.slider_pront').show()
+			$('.pront').show()
 		}else if(filter==3){
-			$('.slider_p, .slider_u, .slider_pront').hide()
+			$('.slider_p, .slider_u, .slider_pront, .pront').hide()
 			$('.slider_d').show()
 		}
 	})
@@ -65,10 +66,6 @@ $(function(){
 		}else if(scroll >= 2156 && scroll<3848){   // about 구간
 			$('.gnb li a').css({fontWeight:'300'}) 
             $('.gnb li:eq(1) a').css({fontWeight:'900'})
-			$('.stick_html span').css({width:'90%'})
-			$('.stick_js span').css({width:'40%'})
-			$('.stick_jq span').css({width:'50%'})
-			$('.stick_vue span').css({width:'60%'})
 		}else if(scroll >= 3848 && scroll<4284){  // work 구간
 			$('.gnb li a').css({fontWeight:'300'}) 
             $('.gnb li:eq(2) a').css({fontWeight:'900'})
@@ -79,6 +76,23 @@ $(function(){
 			$('.skill span').css({width:0})
 		}
 
+		// about섹션 skill stick
+		if(scroll>=1600 && scroll<3848){
+			$('.stick_html span').css({width:'90%'})
+			$('.stick_js span').css({width:'40%'})
+			$('.stick_jq span').css({width:'50%'})
+			$('.stick_vue span').css({width:'60%'})
+		}
+
+	})
+
+	// popuo close 버튼
+	$('.popup').hide()
+	$('.page_dining').click(function(){
+		$('.popup_dining').show()
+	})
+	$('.btn_close').click(function(){
+		$('.popup').hide()
 	})
 
 
