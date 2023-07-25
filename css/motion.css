@@ -1,0 +1,28 @@
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cover{
+    width: 100vw;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.cover:nth-child(1){
+    /* margin-top: 5vh; */
+    /* transform: rotate(-1deg); */
+    background-color: #BFCFEA;
+}
+
+.cover:nth-child(2){
+    /* transform: rotate(1deg); */
+    background-color: #5980C3;
+    justify-content: flex-end;
+}
+
+.cover>p{
+    display: flex;
+    padding: 1rem 0;
+    font-size:5rem ;
+}

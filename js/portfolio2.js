@@ -12,7 +12,7 @@ $(function(){
     });
 
     //슬라이드 숨기기
-	$('.slider_u, .slider_d, .slider_pront, .pront').hide()
+	$('.slider_u, .slider_d, .pront').hide()
 	//탭메뉴
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on')
@@ -51,7 +51,7 @@ $(function(){
         let target = $($(this).attr('href')).offset().top
         console.log(target)
 
-        $('body,html').animate({scrollTop:target-100},1000)
+        $('body,html').animate({scrollTop:target-150},1000)
     })
 
 	// 스크롤바의 위치정보 확인하기
@@ -59,14 +59,14 @@ $(function(){
 		let scroll = $(this).scrollTop()
 		console.log(scroll)
 
-		if(scroll==0 && scroll<2156){    // home 구간
+		if(scroll==0 && scroll<2115){    // home 구간
 			$('.gnb li a').css({fontWeight:'300'}) 
             $('.gnb li:eq(0) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})
-		}else if(scroll >= 2156 && scroll<3848){   // about 구간
+		}else if(scroll >= 2116 && scroll<3797){   // about 구간
 			$('.gnb li a').css({fontWeight:'300'}) 
             $('.gnb li:eq(1) a').css({fontWeight:'900'})
-		}else if(scroll >= 3848 && scroll<4284){  // work 구간
+		}else if(scroll >= 3798 && scroll<4284){  // work 구간
 			$('.gnb li a').css({fontWeight:'300'}) 
             $('.gnb li:eq(2) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})

@@ -322,32 +322,15 @@ header ul.gnb li a{
 }
 /* -------------------------motion------------------------------- */
 .motion {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 200px;
     font-size: 100px;
     font-weight: 900;
     color: #333;
-    -webkit-text-stroke: calc(0.005em + 3px) #BFCFEA;
-    margin: 300px 0;
+    /* -webkit-text-stroke: calc(0.005em + 3px) #BFCFEA; */
+    margin: 200px 0 400px 0;
     position: relative;
 }
-
-.motion .up{
-    position: absolute;
-    white-space: nowrap;
-    font-weight: 900;
-    left: 0;
-    background: yellow;
-}
-
-.motion .down{
-    font-weight: 900;
-    position: absolute;
-    white-space: nowrap;
-    left: -500px;
-    top: 100px;
-}
-
 
 /* ------------------------work---------------------------- */
 #work{
