@@ -5,6 +5,7 @@ body{
     color: #fff;
     position: relative;
 }
+
 /* popup */
 .popup{
     width: 100%;
@@ -24,10 +25,34 @@ body{
     width: 48px;
     height: 48px;
     margin-left: 100px;
+    position: absolute;
+    left: 1243px;
+    top: 3837px;
+    z-index: 11;
 }
-.popup img{
+
+.popup_dining img{
     width: 480px;
     height: 1335px;
+}
+.popup_spiderman img, .popup_elemental img{
+    margin-top: 300px;
+    width: 740px;
+    height: 230px;
+}
+.popup_krill img{
+    width: 1520px;
+    height: 1668px;
+}
+.popup_krill .btn_close{
+    position: absolute;
+    left: 1437px;
+    top: 3902px;
+    z-index: 11;
+}
+.popup_menu img{
+    width: 480px;
+    height: 678px;
 }
 
 /* header */

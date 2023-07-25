@@ -91,6 +91,19 @@ $(function(){
 	$('.page_dining').click(function(){
 		$('.popup_dining').show()
 	})
+	$('.page_spiderman').click(function(){
+		$('.popup_spiderman').show()
+	})
+	$('.page_elemental').click(function(){
+		$('.popup_elemental').show()
+	})
+	$('.page_cardnews').click(function(){
+		$('.popup_krill').show()
+	})
+	$('.page_menu').click(function(){
+		$('.popup_menu').show()
+	})
+
 	$('.btn_close').click(function(){
 		$('.popup').hide()
 	})
