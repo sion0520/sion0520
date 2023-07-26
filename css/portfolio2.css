@@ -19,6 +19,7 @@ body{
     justify-content: center;
     padding: 3846px 0 0 0 ;
 }
+
 .popup .btn_close{
     background: url("../images/icon/icon_close.png")no-repeat center center;
     text-indent: -99999px;
@@ -35,21 +36,25 @@ body{
     width: 480px;
     height: 1335px;
 }
+
 .popup_spiderman img, .popup_elemental img{
     margin-top: 300px;
     width: 740px;
     height: 230px;
 }
+
 .popup_krill img{
     width: 1520px;
     height: 1668px;
 }
+
 .popup_krill .btn_close{
     position: absolute;
     left: 1437px;
     top: 3902px;
     z-index: 11;
 }
+
 .popup_menu img{
     width: 480px;
     height: 678px;
@@ -67,7 +72,6 @@ header{
     align-items: center;
     backdrop-filter: blur(2px);
     z-index: 10000;
-
     position: fixed;
     left: 0;
     top: 0;
@@ -133,7 +137,6 @@ header ul.gnb li a{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     text-align: center;
     font-size: 50px;
     font-weight: 900;
@@ -345,6 +348,7 @@ header ul.gnb li a{
     border-radius:20px ;
     transition: width ease 3s;
 }
+
 /* -------------------------motion------------------------------- */
 .motion {
     /* border: 1px solid red; */
@@ -524,7 +528,6 @@ header ul.gnb li a{
     border-radius:16px;
 }
 
-
 /* ---------------------------contact----------------------------- */
 #contact{
     border-top:4px solid #fff;
@@ -581,9 +584,6 @@ header ul.gnb li a{
 #contact ul.adress li:hover::before{
     width: 100%;
 }
-
-
-
 
 /* --------------------------footer----------------------- */
 footer{
