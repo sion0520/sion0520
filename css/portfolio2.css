@@ -504,7 +504,6 @@ header ul.gnb li a{
 
 /* pront */
 .pront{
-    /* border: 1px solid red; */
     height: 408px;
     margin-left: 660px;
 }
@@ -520,7 +519,6 @@ header ul.gnb li a{
     margin-right: 10px;
 }
 .pront .item a img{
-    border: 1px solid #fff;
     width: 604px;
     height: 338px;
     border-radius:16px;
