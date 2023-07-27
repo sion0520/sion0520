@@ -86,7 +86,7 @@ $(function(){
 
 	})
 
-	// popuo close 버튼
+	// popup
 	$('.popup').hide()
 	$('.page_dining').click(function(){
 		$('.popup_dining').show()
