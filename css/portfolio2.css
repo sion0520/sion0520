@@ -80,9 +80,9 @@ header{
 header h1 a{
     text-indent: -99999px;
     display: block;
-    width: 72px;
-    height: 32px;
-    background: url("../images/logo/logo_zion.png")no-repeat;
+    width: 50px;
+    height: 50px;
+    background: url("../images/logo/logo.png")no-repeat center center;
 }
 
 header ul.gnb{
