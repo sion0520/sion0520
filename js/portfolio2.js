@@ -85,16 +85,31 @@ $(function(){
             $('.gnb li:eq(3) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})
 		}
-
-		// about섹션 skill stick
-		if(scroll>=1600 && scroll<3848){
-			$('.stick_html span').css({width:'90%'})
-			$('.stick_js span').css({width:'40%'})
-			$('.stick_jq span').css({width:'50%'})
-			$('.stick_vue span').css({width:'60%'})
-		}
-
 	})
+
+	// about섹션 skill stick
+	window.addEventListener('scroll', () => {
+		// 뷰포트 크기에 따라 요소의 너비 동적으로 조정
+		const viewportWidth = window.innerWidth;
+
+		if (viewportWidth <= 768) { // 예시: 뷰포트 가로 크기가 768px 이하일 때
+			$('.stick_html span').css({ width: '80%' });
+			$('.stick_js span').css({ width: '30%' });
+			$('.stick_jq span').css({ width: '40%' });
+			$('.stick_vue span').css({ width: '50%' });
+		} else if (viewportWidth <= 1024) { // 예시: 뷰포트 가로 크기가 1024px 이하일 때
+			$('.stick_html span').css({ width: '90%' });
+			$('.stick_js span').css({ width: '40%' });
+			$('.stick_jq span').css({ width: '50%' });
+			$('.stick_vue span').css({ width: '60%' });
+		} else { // 예시: 그 외의 경우
+			$('.stick_html span').css({ width: '100%' });
+			$('.stick_js span').css({ width: '50%' });
+			$('.stick_jq span').css({ width: '60%' });
+			$('.stick_vue span').css({ width: '70%' });
+		}
+	});
+
 
 	// popup
 	$('.popup').hide()
