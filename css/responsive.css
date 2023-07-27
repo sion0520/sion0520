@@ -1,25 +1,40 @@
 /* 모바일 */
 @media (min-width:320px) and (max-width:767px){
     
-    header h1 a{
+    header{
+        padding: 0;
+    }
+
+    header h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header ul.gnb{
         display: none;
     }
 
     .inner{
-        width: 568px;
+        width: 332px;
     }
 
     #home .my{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #home h2{
-        font-size: 95px;
+        font-size: 50px;
+    }
+
+    #home h2::before{
+        height: 2px;
     }
 
     #home .slogan{
-        font-size: 18px;
+        font-size: 16px;
         margin: 20px 0;
+        letter-spacing: -0.16px;
     }
 
     #home .arrow{
@@ -30,8 +45,8 @@
 
     #home .cloud1{
         width: 86px;
-        right: 80px;
-        top:578px;
+        right: 70px;
+        top:478px;
     }
 
     #home .cloud2{
@@ -46,7 +61,6 @@
 
     #home .introduce{
         margin: 400px 0;
-
     }
 
     #home .introduce .mark_start{
@@ -59,6 +73,8 @@
 
     #home .introduce p{
         font-size: 18px;
+        letter-spacing: 0px;
+        line-height: normal;
     }
 
     #about h2{
@@ -68,40 +84,41 @@
     }
 
     #about .card{
-        width: 568px;
+        width: 335px;
+        height: 550px;
         border-radius: 0px 25px 25px 25px;
-        padding: 40px 0;
+        padding: 40px 10px;
         display: block;
     }
 
     #about .photo{
-        width: 175px;
+        width: 88px;
         float: left;
-        margin: 0 50px;
+        margin: 0 20px 0 0;
     }
 
     #about ul.left{
-        margin-top: 60px;
+        margin-top: 10px;
     }
 
     #about ul.left li{
-        font-size: 18px;
+        font-size: 16px;
         margin-top:10px ;
     }
 
     #about ul.right{
-        margin-top:60px ;
+        margin-top:10px ;
         float: right;
     }
 
     #about ul.right li{
-        font-size: 18px;
+        font-size: 16px;
         margin: 10px 0 0 10px;
     }
 
     #about .skill{
-        margin-top: 180px;
-        padding:  0 50px;
+        margin-top: 40px;
+        padding:  0;
     }
     #about .skill h3{
         font-size: 20px;
@@ -112,35 +129,48 @@
         width: 24px;
     }
 
-    /* 탭메뉴 */
+    #about ul.program li .stick{
+        height: 10px;
+    }
+
+    #about ul.program li .stick span{
+        height: 8px;
+    }
+
     #work ul.tab{
-        width: 568px;
+        width: 335px;
         height: 25px;
         left: 50%;
         transform: translateX(-50%);
         background: none;
         padding: 0;
         display: flex;
-        gap: 36px;
+        justify-content: space-between;
     }
 
     #work ul.tab li{
-        font-size: 20px;
+        font-size: 15px;
         margin: 0;
+        letter-spacing: -0.6px;
     }
 
     #work ul.tab li.on::after{
         width: 100%;
+        bottom: 0;
     }
 
     .slick-slider img{
-        width: 470px;
-        height: 264px;
+        width: 100%;
+        height: 188px;
+        opacity: 0;
+    }
+
+    .slick-center img{
+        opacity: 1;
     }
 
     .slider h3{
         font-size: 20px;
-        z-index: 1000;
         margin-top: 100px;
         text-align: center;
         opacity: 1;
@@ -165,17 +195,17 @@
     }
 
     .slick-prev{
-        left: 247px;
+        left: 47px;
         bottom: -80px;
     }
 
     .slick-next{
-        right: 247px;
+        right: 47px;
         bottom: -80px;
     }
 
     .front{
-        margin: 0 150px;
+        margin: 0 40px;
     }
 
     .front .item h3{
@@ -189,30 +219,39 @@
     }
 
     .front .item a img{
-        width: 470px;
-        height: 264px;
+        width: 295px;
+        height: 165px;
     }
 
     #contact{
         padding: 100px 0;
+        border: none;
     }
 
     #contact h2{
-        font-size: 95px;
+        font-size: 50px;
+        margin-bottom: 20px;
     }
 
     #contact h2::before{
         width: 100%;
-        height: 6px;
-        top: 100px;
+        height: 3px;
+        top: 50px;
+    }
+
+    #contact ul.adress{
+        display: block;
     }
 
     #contact ul.adress li a{
         font-size: 16px;
+        line-height: 25px;
     }
 
     footer{
-        height: 40px;
-        padding: 10px;
+        font-size: 13px;
+        
+        padding: 10px 20px;
+        letter-spacing: -0.6px;
     }
 }

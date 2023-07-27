@@ -11,12 +11,12 @@ $(function(){
 		// centerPadding: '60px',
 
 		responsive:[{
-			breakpoint: 769,
+			breakpoint: 768,
 			settings: {
 				arrows: true,
 				dots:true,
 				centerMode: true,
-				// centerPadding: '40px',
+				centerPadding: '40px',
 				slidesToShow: 1
 			}
 			},]
