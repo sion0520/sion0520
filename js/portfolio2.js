@@ -7,8 +7,19 @@ $(function(){
         // autoplaySpeed: 3000,
 		dots:true,
 		centerMode: true,
-		setPosition:0
+		setPosition:0,
 		// centerPadding: '60px',
+
+		responsive:[{
+			breakpoint: 769,
+			settings: {
+				arrows: true,
+				dots:true,
+				centerMode: true,
+				// centerPadding: '40px',
+				slidesToShow: 1
+			}
+			},]
     });
 
     //슬라이드 숨기기

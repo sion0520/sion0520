@@ -1,6 +1,218 @@
 /* 모바일 */
 @media screen and (max-width:768px){
+    
+    header h1 a{
+        display: none;
+    }
 
+    .inner{
+        width: 568px;
+    }
 
+    #home .my{
+        font-size: 50px;
+    }
 
+    #home h2{
+        font-size: 95px;
+    }
+
+    #home .slogan{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    #home .arrow{
+        width: 24px;
+        height: 24px;
+        margin-top: 10px;
+    }
+
+    #home .cloud1{
+        width: 86px;
+        right: 80px;
+        top:578px;
+    }
+
+    #home .cloud2{
+        width: 86px;
+        top: 765px;
+    }
+
+    #home .cloud3{
+        width: 86px;
+        top: 821px;
+    }
+
+    #home .introduce{
+        margin: 400px 0;
+
+    }
+
+    #home .introduce .mark_start{
+        width: 24px;
+    }
+
+    #home .introduce .mark_end{
+        width: 24px;
+    }
+
+    #home .introduce p{
+        font-size: 18px;
+    }
+
+    #about h2{
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #about .card{
+        width: 568px;
+        border-radius: 0px 25px 25px 25px;
+        padding: 40px 0;
+        display: block;
+    }
+
+    #about .photo{
+        width: 175px;
+        float: left;
+        margin: 0 50px;
+    }
+
+    #about ul.left{
+        margin-top: 60px;
+    }
+
+    #about ul.left li{
+        font-size: 18px;
+        margin-top:10px ;
+    }
+
+    #about ul.right{
+        margin-top:60px ;
+        float: right;
+    }
+
+    #about ul.right li{
+        font-size: 18px;
+        margin: 10px 0 0 10px;
+    }
+
+    #about .skill{
+        margin-top: 180px;
+        padding:  0 50px;
+    }
+    #about .skill h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #about ul.program li img{
+        width: 24px;
+    }
+
+    /* 탭메뉴 */
+    #work ul.tab{
+        width: 568px;
+        height: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        padding: 0;
+        display: flex;
+        gap: 36px;
+    }
+
+    #work ul.tab li{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #work ul.tab li.on::after{
+        width: 100%;
+    }
+
+    .slick-slider img{
+        width: 470px;
+        height: 264px;
+    }
+
+    .slider h3{
+        font-size: 20px;
+        z-index: 1000;
+        margin-top: 100px;
+        text-align: center;
+        opacity: 1;
+    }
+
+    .slider h3 span{
+        font-size: 20px;
+    }
+
+    .slick-dots button{
+        width: 20px;
+        height: 6px;
+    }
+
+    .slick-active button{
+        width: 40px;
+    }
+
+    .slick-arrow{
+        width: 24px;
+        height: 24px;
+    }
+
+    .slick-prev{
+        left: 247px;
+        bottom: -80px;
+    }
+
+    .slick-next{
+        right: 247px;
+        bottom: -80px;
+    }
+
+    .front{
+        margin: 0 150px;
+    }
+
+    .front .item h3{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 100px;
+    }
+
+    .front .item h3 span{
+        font-size: 20px;
+    }
+
+    .front .item a img{
+        width: 470px;
+        height: 264px;
+    }
+
+    #contact{
+        padding: 100px 0;
+    }
+
+    #contact h2{
+        font-size: 95px;
+    }
+
+    #contact h2::before{
+        width: 100%;
+        height: 6px;
+        top: 100px;
+    }
+
+    #contact ul.adress li a{
+        font-size: 16px;
+    }
+
+    footer{
+        height: 40px;
+        padding: 10px;
+    }
 }

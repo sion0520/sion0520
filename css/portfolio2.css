@@ -211,12 +211,10 @@ header ul.gnb li a{
 /* ----------------------about----------------------------- */
 #about{
     margin-top: 493px;
-    /* border: 1px solid yellow; */
 }
 
 #about .inner{
     position: relative;
-    /* border: 1px solid red; */
 }
 
 #about h2{
@@ -375,10 +373,8 @@ header ul.gnb li a{
     top: 0;
     padding: 90px 79px 0 0;
     box-sizing: border-box;
-    
     z-index: 2;
     background: #333;
-    /* border: 1px solid yellow; */
 }
 
 #work ul.tab li{
@@ -411,7 +407,7 @@ header ul.gnb li a{
 
 /* slider */
 .slider{
-    width: 1920px;
+    width: 100%;
     height: 408px;
     margin-top:228px ;
     /* border: 1px solid aqua; */
@@ -595,4 +591,5 @@ footer{
 footer p{   
     text-align: center;
     color: #555;
+    font-size: 16px;
 }
