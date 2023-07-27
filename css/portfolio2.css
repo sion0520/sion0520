@@ -506,23 +506,23 @@ header ul.gnb li a{
     background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
 }
 
-/* pront */
-.pront{
+/* front */
+.front{
     height: 408px;
     margin-left: 660px;
 }
-.pront .item h3{
+.front .item h3{
     color: #fff;
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 40px;
 }
-.pront .item h3 span{  
+.front .item h3 span{  
     color: #5980C3;
     font-size: 50px;
     margin-right: 10px;
 }
-.pront .item a img{
+.front .item a img{
     width: 604px;
     height: 338px;
     border-radius:16px;
