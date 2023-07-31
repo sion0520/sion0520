@@ -21,15 +21,18 @@ body{
 }
 
 .popup .btn_close{
-    background: url("../images/icon/icon_close.png")no-repeat center center;
+    background: url("../images/icon/btn_close.png")no-repeat center center;
     text-indent: -99999px;
-    width: 48px;
-    height: 48px;
-    margin-left: 100px;
+    width: 36px;
+    height: 36px;
     position: absolute;
-    left: 1243px;
-    top: 4000px;
+    left: 1504px;
+    top: 4261px;
     z-index: 11;
+}
+
+.popup img{
+    margin-top: 200px; 
 }
 
 .popup_dining img{
@@ -38,7 +41,7 @@ body{
 }
 
 .popup_spiderman img, .popup_elemental img{
-    margin-top: 300px;
+    margin-top: 500px;
     width: 740px;
     height: 230px;
 }
@@ -46,13 +49,6 @@ body{
 .popup_krill img{
     width: 1520px;
     height: 1668px;
-}
-
-.popup_krill .btn_close{
-    position: absolute;
-    left: 1437px;
-    top: 3902px;
-    z-index: 11;
 }
 
 .popup_menu img{
