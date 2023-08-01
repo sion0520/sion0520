@@ -93,47 +93,62 @@ $(function(){
 		const viewportWidth = window.innerWidth;
 
 		if (viewportWidth <= 768) { // 예시: 뷰포트 가로 크기가 768px 이하일 때
-			$('.stick_html span').css({ width: '80%' });
-			$('.stick_js span').css({ width: '30%' });
-			$('.stick_jq span').css({ width: '40%' });
-			$('.stick_vue span').css({ width: '50%' });
+			$('.stick_html span').css({ width: '90%' });
+			$('.stick_js span').css({ width: '40%' });
+			$('.stick_jq span').css({ width: '50%' });
+			$('.stick_vue span').css({ width: '60%' });
 		} else if (viewportWidth <= 1024) { // 예시: 뷰포트 가로 크기가 1024px 이하일 때
 			$('.stick_html span').css({ width: '90%' });
 			$('.stick_js span').css({ width: '40%' });
 			$('.stick_jq span').css({ width: '50%' });
 			$('.stick_vue span').css({ width: '60%' });
 		} else { // 예시: 그 외의 경우
-			$('.stick_html span').css({ width: '100%' });
-			$('.stick_js span').css({ width: '50%' });
-			$('.stick_jq span').css({ width: '60%' });
-			$('.stick_vue span').css({ width: '70%' });
+			$('.stick_html span').css({ width: '90%' });
+			$('.stick_js span').css({ width: '40%' });
+			$('.stick_jq span').css({ width: '50%' });
+			$('.stick_vue span').css({ width: '60%' });
 		}
 	});
 
 
-	// popup
-	$('.popup').hide()
-	$('.page_dining').click(function(){
-		$('.popup_dining').show()
-	})
-	$('.page_spiderman').click(function(){
-		$('.popup_spiderman').show()
-	})
-	$('.page_elemental').click(function(){
-		$('.popup_elemental').show()
-	})
-	$('.page_cardnews').click(function(){
-		$('.popup_krill').show()
-	})
-	$('.page_menu').click(function(){
-		$('.popup_menu').show()
-	})
+	// 모바일인지 확인하는 함수
+	function isMobile() {
+		return window.innerWidth <= 768;
+	}
 
+	// 팝업 숨기기
+	$('.popup').hide()
+
+	// 닫기버튼
 	$('.btn_close').click(function(){
 		$('.popup').hide()
 	})
+
+	$('.page_dining').click(function(){
+		if (!isMobile()) {
+			$('.popup_dining').show();
+		}
+	});
+	$('.page_spiderman').click(function(){
+		if (!isMobile()) {
+			$('.popup_spiderman').show();
+		}
+	});
+	$('.page_elemental').click(function(){
+		if (!isMobile()) {
+			$('.popup_elemental').show();
+		}
+	});
+	$('.page_cardnews').click(function(){
+		if (!isMobile()) {
+			$('.popup_krill').show();
+		}
+	});
+	$('.page_menu').click(function(){
+		if (!isMobile()) {
+			$('.popup_menu').show();
+		}
+	});
+
 	
-
-
-
 })
