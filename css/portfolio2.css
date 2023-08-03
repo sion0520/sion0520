@@ -298,7 +298,7 @@ header ul.gnb li a{
     margin-bottom: 0;
 }
 
-/* stick */
+/* 스킬 스틱 */
 #about ul.program li .stick{
     width: 415px;
     height: 20px;
@@ -356,7 +356,6 @@ header ul.gnb li a{
     font-size: 100px;
     font-weight: 900;
     color: #333;
-    /* -webkit-text-stroke: calc(0.005em + 3px) #BFCFEA; */
     margin: 200px 0 400px 0;
     position: relative;
 }
@@ -365,16 +364,15 @@ header ul.gnb li a{
     width: 100vw;
     margin-bottom: 15px;
     display: flex;
+    overflow: hidden;
+    transform-style: preserve-3d;
 }
 
 .cover:nth-child(1){
-    /* margin-top: 5vh; */
-    /* transform: rotate(-1deg); */
     background-color: #BFCFEA;
 }
 
 .cover:nth-child(2){
-    /* transform: rotate(1deg); */
     background-color: #5980C3;
     justify-content: flex-end;
 }
@@ -431,7 +429,7 @@ header ul.gnb li a{
     100%{left: 0px;}
 }
 
-/* slider */
+/* 슬라이드 */
 .slider{
     width: 100%;
     height: 408px;
@@ -463,6 +461,7 @@ header ul.gnb li a{
 .slick-center img{
     width: 604px;
     height: 338px;
+    position: relative;
 }
 
 
@@ -533,7 +532,7 @@ header ul.gnb li a{
     background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
 }
 
-/* front */
+/* 프론트엔드 */
 .front{
     height: 408px;
     margin-left: 660px;

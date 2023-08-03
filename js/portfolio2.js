@@ -22,7 +22,7 @@ $(function(){
     });
 
 
-    //탭메뉴(필터)
+    //탭메뉴
 	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on')
@@ -98,10 +98,10 @@ $(function(){
 
 	// 스킬스틱 모바일버전
 	window.addEventListener('scroll', () => {
-		// 뷰포트 크기에 따라 요소의 너비 동적으로 조정
+		// 뷰포트 크기에 따라 스킬스틱 길이를 동적으로 조정
 		const viewportWidth = window.innerWidth;
 
-		if (viewportWidth <= 768) { // 예시: 뷰포트 가로 크기가 768px 이하일 때
+		if (viewportWidth <= 768) { // 가로 768px 이하일 때
 			$('.stick_html span').css({ width: '90%' });
 			$('.stick_js span').css({ width: '40%' });
 			$('.stick_jq span').css({ width: '50%' });
@@ -115,15 +115,11 @@ $(function(){
 		return window.innerWidth <= 768;
 	}
 
-	// 팝업 숨기기
-	$('.popup').hide()
-
-	// 닫기버튼
-	$('.btn_close').click(function(){
+	// 팝업
+	$('.popup').hide()                    // 팝업 숨기기
+	$('.btn_close').click(function(){    // 팝업 닫기 버튼
 		$('.popup').hide()
 	})
-
-	//팝업
 	$('.page_dining').click(function(){
 		if (!isMobile()) {
 			$('.popup_dining').show();
@@ -150,5 +146,6 @@ $(function(){
 		}
 	});
 
-	
+
+
 })
