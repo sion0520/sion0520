@@ -21,15 +21,9 @@ $(function(){
 			},]
     });
 
-	// 작품설명
-	// $('.explain').hide()
-	$('.slider a').mouseenter(function(){
-		$('.explain').fadeOut()
-	})
 
-    //슬라이드 숨기기
-	$('.slider_u, .slider_d, .front').hide()
-	//탭메뉴
+    //탭메뉴(필터)
+	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on')
 		$(this).addClass('on')
