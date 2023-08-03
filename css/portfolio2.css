@@ -1,9 +1,15 @@
 @charset "utf-8";
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
 body{
     font-family: 'SUITE', sans-serif;
     background: #333;
     color: #fff;
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* popup */
@@ -347,8 +353,6 @@ header ul.gnb li a{
 
 /* -------------------------motion------------------------------- */
 .motion {
-    /* border: 1px solid red; */
-    height: 200px;
     font-size: 100px;
     font-weight: 900;
     color: #333;
@@ -357,6 +361,30 @@ header ul.gnb li a{
     position: relative;
 }
 
+.cover{
+    width: 100vw;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.cover:nth-child(1){
+    /* margin-top: 5vh; */
+    /* transform: rotate(-1deg); */
+    background-color: #BFCFEA;
+}
+
+.cover:nth-child(2){
+    /* transform: rotate(1deg); */
+    background-color: #5980C3;
+    justify-content: flex-end;
+}
+
+.cover>p{
+    display: flex;
+    padding:10px 0;
+    font-size: 30px;
+    font-weight: 300;
+}
 /* ------------------------work---------------------------- */
 #work{
     position: relative;
@@ -410,6 +438,10 @@ header ul.gnb li a{
     margin-top:228px ;
 }
 
+.slider a{
+    position: relative;
+}
+
 .slick-slide{
     max-width: 725px;
     height: 408px;
@@ -430,6 +462,23 @@ header ul.gnb li a{
 .slick-center img{
     width: 604px;
     height: 338px;
+}
+
+/* 설명 */
+.explain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius:16px;
+    padding: 60px;
+    box-sizing: border-box;
+    /* display: none; */
+}
+.explain p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 /* 제목 커스텀 */

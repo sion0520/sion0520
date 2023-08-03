@@ -4,11 +4,10 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplaySpeed: 3000,
 		dots:true,
 		centerMode: true,
 		setPosition:0,
-		// centerPadding: '60px',
 
 		responsive:[{
 			breakpoint: 768,
@@ -21,6 +20,12 @@ $(function(){
 			}
 			},]
     });
+
+	// 작품설명
+	// $('.explain').hide()
+	$('.slider a').mouseenter(function(){
+		$('.explain').fadeOut()
+	})
 
     //슬라이드 숨기기
 	$('.slider_u, .slider_d, .front').hide()
@@ -85,9 +90,19 @@ $(function(){
             $('.gnb li:eq(3) a').css({fontWeight:'900'})
 			$('.skill span').css({width:0})
 		}
+
+		// 스킬스틱 pc버전
+		if(scroll>=1896 && scroll<3599){
+			$('.stick_html span').css({ width: '90%' });
+			$('.stick_js span').css({ width: '40%' });
+			$('.stick_jq span').css({ width: '50%' });
+			$('.stick_vue span').css({ width: '60%' });
+		}else{
+			$('.stick span').css({ width: '0%' });
+		}
 	})
 
-	// about섹션 skill stick
+	// 스킬스틱 모바일버전
 	window.addEventListener('scroll', () => {
 		// 뷰포트 크기에 따라 요소의 너비 동적으로 조정
 		const viewportWidth = window.innerWidth;
@@ -97,17 +112,7 @@ $(function(){
 			$('.stick_js span').css({ width: '40%' });
 			$('.stick_jq span').css({ width: '50%' });
 			$('.stick_vue span').css({ width: '60%' });
-		} else if (viewportWidth <= 1024) { // 예시: 뷰포트 가로 크기가 1024px 이하일 때
-			$('.stick_html span').css({ width: '90%' });
-			$('.stick_js span').css({ width: '40%' });
-			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '60%' });
-		} else { // 예시: 그 외의 경우
-			$('.stick_html span').css({ width: '90%' });
-			$('.stick_js span').css({ width: '40%' });
-			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '60%' });
-		}
+		} 
 	});
 
 
@@ -124,6 +129,7 @@ $(function(){
 		$('.popup').hide()
 	})
 
+	//팝업
 	$('.page_dining').click(function(){
 		if (!isMobile()) {
 			$('.popup_dining').show();
