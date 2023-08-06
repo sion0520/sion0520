@@ -1,4 +1,16 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 html{
     width: 100%;
     overflow-x: hidden;
@@ -209,7 +221,6 @@ header ul.gnb li a{
     font-weight: 500;
     letter-spacing: 2.8px;
     line-height: normal;
-
 }
 
 /* ----------------------about----------------------------- */
@@ -221,7 +232,7 @@ header ul.gnb li a{
     position: relative;
 }
 
-#about h2{
+#about h4{
     color: #FFF;
     font-family: GangwonEduPower;
     font-size: 50px;
@@ -463,7 +474,6 @@ header ul.gnb li a{
     height: 338px;
     position: relative;
 }
-
 
 /* 제목 커스텀 */
 .slider h3{
