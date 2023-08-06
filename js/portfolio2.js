@@ -187,8 +187,8 @@ $(function(){
 		animate();
 	
 		window.addEventListener('scroll',() => {
-			count1 += 15;
-			count2 += 15;
+			count1 += 2;
+			count2 += 2;
 		});
 	
 	});
