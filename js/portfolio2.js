@@ -54,11 +54,11 @@ $(function(){
 
 	// 페이지 내에서 링크위치로 스크롤바를 이동
     $('.gnb li a').click(function(){
-        let name = $($(this).attr('href'))
+        let name = $($(this).attr('href'));
         console.log(name)
         let target = $($(this).attr('href')).offset().top
         console.log(target)
-        $('body,html').animate({scrollTop:target-150},1000)
+        $('body,html').animate({scrollTop:target-150},1000);
     });
 
 	// 스크롤바의 위치정보 확인하기
