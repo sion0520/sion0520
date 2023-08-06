@@ -115,7 +115,7 @@ $(function(){
 	// 팝업
 	$('.popup').hide();                 // 팝업 숨기기
 	$('.btn_close').click(function(){    // 팝업 닫기 버튼
-		$('.popup').hide()
+		$('.popup').hide();
 	});
 	$('.page_dining').click(function(){
 		if (!isMobile()) {
