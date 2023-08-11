@@ -3,12 +3,12 @@ $(function(){
 	$('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
         autoplaySpeed: 3000,
 		dots:true,
 		centerMode: true,
 		setPosition:0,
 
+		// 슬라이드 반응형 : 모바일
 		responsive:[{
 			breakpoint: 768,
 			settings: {
@@ -17,7 +17,7 @@ $(function(){
 				centerMode: true,
 				slidesToShow: 1
 			}
-			},]
+		},]
     });
 
 	// 구름 애니메이션
@@ -97,7 +97,7 @@ $(function(){
 		// 뷰포트 크기에 따라 스킬스틱 길이를 동적으로 조정
 		const viewportWidth = window.innerWidth;
 
-		if (viewportWidth <= 768) { // 가로 768px 이하일 때
+		if (viewportWidth <= 768) {           // 가로 768px 이하일 때
 			$('.stick_html span').css({ width: '90%' });
 			$('.stick_js span').css({ width: '40%' });
 			$('.stick_jq span').css({ width: '50%' });
@@ -152,15 +152,15 @@ $(function(){
 		const textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 		const textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 	
-		// 같은 내용을 맨 뒤에 push하는 것을 반복
+		// 같은 내용을 맨 뒤에 반복해서 push하는 함수
 		function initTexts(element, textArray){
-			textArray.push(...textArray)
+			textArray.push(...textArray);
 			for(let i = 0; i < textArray.length; i++){
 				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
 			}
 		}
 
-		//텍스트 삽입
+		//pTag에 textArr를 삽입
 		initTexts(pTag1, textArr1);
 		initTexts(pTag2, textArr2);
 	
@@ -197,6 +197,5 @@ $(function(){
 			count1 += 30;
 			count2 += 15;
 		});
-	
 	});
 });
