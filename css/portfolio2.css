@@ -364,7 +364,7 @@ header ul.gnb li a{
 
 /* -------------------------motion------------------------------- */
 .motion {
-    margin: 200px 0 400px 0;
+    margin: 200px 0 200px 0;
     position: relative;
 }
 
@@ -400,7 +400,7 @@ header ul.gnb li a{
 
 /* 탭메뉴 */
 #work ul.tab{
-    width: 657px;
+    width: 640px;
     height: 500px;
     position: absolute;
     left: 0;
@@ -426,7 +426,7 @@ header ul.gnb li a{
 #work ul.tab li.on::after{
     content: '';
     background: #5980C3;
-    width: 247px;
+    width: 240px;
     height: 5px;
     position: absolute;
     bottom: -10px;

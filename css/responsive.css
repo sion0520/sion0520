@@ -78,7 +78,7 @@
         line-height: normal;
     }
 
-    #about h2{
+    #about h4{
         font-size: 20px;
         padding: 10px 20px;
         border-radius: 10px 10px 0px 0px;
@@ -92,7 +92,7 @@
         display: block;
     }
 
-    #about .photo{
+    #about img{
         width: 88px;
         float: left;
         margin: 0 20px 0 0;
@@ -103,7 +103,7 @@
     }
 
     #about ul.left li{
-        font-size: 16px;
+        font-size: 14px;
         margin-top:10px ;
     }
 
@@ -113,7 +113,7 @@
     }
 
     #about ul.right li{
-        font-size: 16px;
+        font-size: 14px;
         margin: 10px 0 0 10px;
     }
 
@@ -122,7 +122,7 @@
         padding:  0;
     }
     #about .skill h3{
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -207,6 +207,7 @@
 
     .front{
         margin: 0 40px;
+        position: relative;
     }
 
     .front .item h3{
@@ -222,6 +223,9 @@
     .front .item a img{
         width: 295px;
         height: 165px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     #contact{
