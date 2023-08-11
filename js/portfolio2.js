@@ -191,11 +191,6 @@ $(function(){
 	
 		//무한반복
 		animate();
-	
-		// 스크롤이벤트
-		window.addEventListener('scroll',() => {
-			count1 += 30;
-			count2 += 15;
-		});
+
 	});
 });

@@ -6,8 +6,8 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'GangwonEduPowerExtraBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -234,7 +234,7 @@ header ul.gnb li a{
 
 #about h4{
     color: #FFF;
-    font-family: GangwonEduPower;
+    font-family: Cafe24ClassicType-Regular;
     font-size: 50px;
     font-weight: 400;
     line-height: normal;
@@ -366,14 +366,13 @@ header ul.gnb li a{
 .motion {
     margin: 200px 0 200px 0;
     position: relative;
+    font-family: Cafe24ClassicType-Regular;
 }
 
 .cover{
     width: 100vw;
     margin-bottom: 15px;
     display: flex;
-    overflow: hidden;
-    transform-style: preserve-3d;
 }
 
 .cover:nth-child(1){
