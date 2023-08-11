@@ -21,6 +21,11 @@ $(function(){
 			},]
     });
 
+	// 구름 애니메이션
+	AOS.init({
+		duration: 1200,
+	});
+
 
     //탭메뉴
 	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
@@ -45,11 +50,6 @@ $(function(){
 			$('.slider_p, .slider_u, .front').hide();
 			$('.slider_d').show();
 		}
-	});
-
-	// 구름 애니메이션
-	AOS.init({
-		duration: 1200,
 	});
 
 	// 페이지 내에서 링크위치로 스크롤바를 이동
@@ -154,8 +154,9 @@ $(function(){
 		const textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 	
 		function initTexts(element, textArray){
+			textArray.push(...textArray)
 			for(let i = 0; i < textArray.length; i++){
-				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`;
+				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
 			}
 		}
 	
@@ -178,8 +179,8 @@ $(function(){
 			count1++;
 			count2++;
 	
-			count1 = marqueeText(count1, pTag1, -1);
-			count2 = marqueeText(count2, pTag2, 1);
+			count1 = marqueeText(count1, pTag1, -0.2);
+			count2 = marqueeText(count2, pTag2, 0.2);
 	
 			window.requestAnimationFrame(animate);
 		}
@@ -187,10 +188,9 @@ $(function(){
 		animate();
 	
 		window.addEventListener('scroll',() => {
-			count1 += 15;
+			count1 += 30;
 			count2 += 15;
 		});
 	
 	});
-
 });
