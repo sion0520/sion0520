@@ -576,15 +576,16 @@ header ul.gnb li a{
 
 #contact h2{
     font-size: 200px;
-    font-weight: 900;
+    font-weight: 300;
     margin-bottom: 100px;
+    opacity: 0.1;
     position: relative;
 }
 
 #contact h2::before{
     content: '';
-    width: 1000px;
-    height: 12px;
+    width: 100%;
+    height: 6px;
     background: #fff;
     position: absolute;
     left: 0;

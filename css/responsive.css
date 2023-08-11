@@ -206,7 +206,7 @@
     }
 
     .front{
-        margin: 0 40px;
+        margin: 228px 40px 0 40px;
         position: relative;
     }
 
@@ -255,7 +255,6 @@
 
     footer{
         font-size: 13px;
-        
         padding: 10px 20px;
         letter-spacing: -0.6px;
     }
