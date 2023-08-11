@@ -545,7 +545,7 @@ header ul.gnb li a{
 /* 프론트엔드 */
 .front{
     height: 408px;
-    margin-left: 660px;
+    margin: 228px 0 0 660px;
 }
 
 .front .item h3{
