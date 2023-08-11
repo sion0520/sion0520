@@ -364,9 +364,6 @@ header ul.gnb li a{
 
 /* -------------------------motion------------------------------- */
 .motion {
-    font-size: 100px;
-    font-weight: 900;
-    color: #333;
     margin: 200px 0 400px 0;
     position: relative;
 }
@@ -381,10 +378,12 @@ header ul.gnb li a{
 
 .cover:nth-child(1){
     background-color: #BFCFEA;
+    color: #333;
 }
 
 .cover:nth-child(2){
     background-color: #5980C3;
+    color: #fff;
     justify-content: flex-end;
 }
 

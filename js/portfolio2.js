@@ -155,7 +155,7 @@ $(function(){
 	
 		function initTexts(element, textArray){
 			for(let i = 0; i < textArray.length; i++){
-				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
+				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`;
 			}
 		}
 	
@@ -187,8 +187,8 @@ $(function(){
 		animate();
 	
 		window.addEventListener('scroll',() => {
-			count1 += 2;
-			count2 += 2;
+			count1 += 15;
+			count2 += 15;
 		});
 	
 	});
