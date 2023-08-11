@@ -11,17 +11,12 @@
     font-weight: normal;
     font-style: normal;
 }
-html{
-    width: 100%;
-    overflow-x: hidden;
-}
 body{
     font-family: 'SUITE', sans-serif;
     background: #333;
     color: #fff;
     position: relative;
-    width: 100%;
-    overflow-x: hidden;
+    max-height: 100vh;
 }
 
 /* popup */
