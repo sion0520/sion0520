@@ -15,7 +15,6 @@ $(function(){
 				arrows: true,
 				dots:true,
 				centerMode: true,
-				centerPadding: '40px',
 				slidesToShow: 1
 			}
 			},]
@@ -153,19 +152,23 @@ $(function(){
 		const textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 		const textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 	
+		// 같은 내용을 맨 뒤에 push하는 것을 반복
 		function initTexts(element, textArray){
 			textArray.push(...textArray)
 			for(let i = 0; i < textArray.length; i++){
 				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
 			}
 		}
-	
+
+		//텍스트 삽입
 		initTexts(pTag1, textArr1);
 		initTexts(pTag2, textArr2);
 	
 		let count1 = 0;
 		let count2 = 0;
 	
+		// count가 element의 절반값 이상이면 count를 0으로 만들고 element도 원위치 시킴
+		// count가 element의 절반값 미만이면 count에 direction을 곱한만큼 이동+count return시킴
 		function marqueeText(count, element, direction){
 			if(count > element.scrollWidth / 2){
 				element.style.transform = 'translateX(0)';
@@ -175,6 +178,7 @@ $(function(){
 			return count;
 		}
 	
+		// 애니메이션 함수
 		function animate(){
 			count1++;
 			count2++;
@@ -185,8 +189,10 @@ $(function(){
 			window.requestAnimationFrame(animate);
 		}
 	
+		//무한반복
 		animate();
 	
+		// 스크롤이벤트
 		window.addEventListener('scroll',() => {
 			count1 += 30;
 			count2 += 15;
