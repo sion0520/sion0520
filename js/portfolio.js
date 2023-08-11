@@ -1,6 +1,6 @@
 $(function(){
-    // 슬라이드
-	$('.slider').slick({
+    //슬라이드
+    $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         // autoplay: true,
@@ -21,9 +21,8 @@ $(function(){
 			},]
     });
 
-
     //탭메뉴
-	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
+    $('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on');
 		$(this).addClass('on');
@@ -47,12 +46,12 @@ $(function(){
 		}
 	});
 
-	// 구름 애니메이션
+    // 구름 애니메이션
 	AOS.init({
 		duration: 1200,
 	});
 
-	// 페이지 내에서 링크위치로 스크롤바를 이동
+    // 페이지 내에서 링크위치로 스크롤바를 이동
     $('.gnb li a').click(function(){
         let name = $($(this).attr('href'));
         console.log(name)
@@ -61,8 +60,7 @@ $(function(){
         $('body,html').animate({scrollTop:target-150},1000);
     });
 
-	// 스크롤바의 위치정보 확인하기
-	$(window).scroll(function(){
+    $(window).scroll(function(){
 		let scroll = $(this).scrollTop();
 
 		if(scroll==0 && scroll<2115){    // home 구간
@@ -93,7 +91,7 @@ $(function(){
 		}
 	});
 
-	// 스킬스틱 모바일버전
+    // 스킬스틱 모바일버전
 	window.addEventListener('scroll', () => {
 		// 뷰포트 크기에 따라 스킬스틱 길이를 동적으로 조정
 		const viewportWidth = window.innerWidth;
@@ -106,13 +104,7 @@ $(function(){
 		} 
 	});
 
-
-	// 모바일인지 확인하는 함수
-	function isMobile() {
-		return window.innerWidth <= 768;
-	}
-
-	// 팝업
+    // 팝업
 	$('.popup').hide();                 // 팝업 숨기기
 	$('.btn_close').click(function(){    // 팝업 닫기 버튼
 		$('.popup').hide();
@@ -144,53 +136,63 @@ $(function(){
 	});
 
 
-	// motion
-	$(function(){
 
-		const pTag1 = document.querySelector('.first-parallel');
-		const pTag2 = document.querySelector('.second-parallel');
-	
-		const textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
-		const textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
-	
-		function initTexts(element, textArray){
-			for(let i = 0; i < textArray.length; i++){
-				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
-			}
-		}
-	
-		initTexts(pTag1, textArr1);
-		initTexts(pTag2, textArr2);
-	
-		let count1 = 0;
-		let count2 = 0;
-	
-		function marqueeText(count, element, direction){
-			if(count > element.scrollWidth / 2){
-				element.style.transform = 'translateX(0)';
-				count = 0;
-			}
-			element.style.transform = `translateX(${count * direction}px)`; 
-			return count;
-		}
-	
-		function animate(){
-			count1++;
-			count2++;
-	
-			count1 = marqueeText(count1, pTag1, -1);
-			count2 = marqueeText(count2, pTag2, 1);
-	
-			window.requestAnimationFrame(animate);
-		}
-	
-		animate();
-	
-		window.addEventListener('scroll',() => {
-			count1 += 2;
-			count2 += 2;
-		});
-	
-	});
+
+
+    
+
+})
+
+// 모바일인지 확인하는 함수
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+// motion
+$(function(){
+
+    const pTag1 = document.querySelector('.first-parallel');
+    const pTag2 = document.querySelector('.second-parallel');
+
+    const textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
+    const textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
+
+    function initTexts(element, textArray){
+        for(let i = 0; i < textArray.length; i++){
+            element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
+        }
+    }
+
+    initTexts(pTag1, textArr1);
+    initTexts(pTag2, textArr2);
+
+    let count1 = 0;
+    let count2 = 0;
+
+    function marqueeText(count, element, direction){
+        if(count > element.scrollWidth / 2){
+            element.style.transform = 'translateX(0)';
+            count = 0;
+        }
+        element.style.transform = `translateX(${count * direction}px)`; 
+        return count;
+    }
+
+    function animate(){
+        count1++;
+        count2++;
+
+        count1 = marqueeText(count1, pTag1, -1);
+        count2 = marqueeText(count2, pTag2, 1);
+
+        window.requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    window.addEventListener('scroll',() => {
+        count1 += 2;
+        count2 += 2;
+    });
 
 });
