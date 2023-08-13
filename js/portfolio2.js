@@ -25,8 +25,17 @@ $(function(){
 		duration: 1200,
 	});
 
+	// 화살표 클릭시 내려가기
+	$('.arrow').click(function() {
+		if ($(window).width() <= 768) {
+			$('body, html').animate({ scrollTop: 500 }, 1200);
+		} else {
+			$('body, html').animate({ scrollTop: 1120 }, 1200);
+		}
+	});
 
-    //탭메뉴
+
+    //탭메뉴(작업물 필터)
 	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on');
@@ -51,19 +60,16 @@ $(function(){
 		}
 	});
 
-	// 페이지 내에서 링크위치로 스크롤바를 이동
+	// 페이지 내에서 링크위치로 스크롤바 이동
     $('.gnb li a').click(function(){
         let name = $($(this).attr('href'));
-        console.log(name)
         let target = $($(this).attr('href')).offset().top
-        console.log(target)
         $('body,html').animate({scrollTop:target-150},1000);
     });
 
-	// 스크롤바의 위치정보 확인하기
+	// 스크롤바 위치 확인
 	$(window).scroll(function(){
-		let scroll = $(this).scrollTop();
-
+		let scroll = $(this).scrollTop();     
 		if(scroll==0 && scroll<2115){    // home 구간
 			$('.gnb li a').css({fontWeight:'300'});
             $('.gnb li:eq(0) a').css({fontWeight:'900'});
@@ -86,30 +92,29 @@ $(function(){
 			$('.stick_html span').css({ width: '90%' });
 			$('.stick_js span').css({ width: '40%' });
 			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '60%' });
+			$('.stick_vue span').css({ width: '40%' });
 		}else{
 			$('.stick span').css({ width: '0%' });
 		}
 	});
 
-	// 스킬스틱 모바일버전
-	window.addEventListener('scroll', () => {
-		// 뷰포트 크기에 따라 스킬스틱 길이를 동적으로 조정
-		const viewportWidth = window.innerWidth;
-
-		if (viewportWidth <= 768) {           // 가로 768px 이하일 때
-			$('.stick_html span').css({ width: '90%' });
-			$('.stick_js span').css({ width: '40%' });
-			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '60%' });
-		} 
-	});
-
-
 	// 모바일인지 확인하는 함수
 	function isMobile() {
 		return window.innerWidth <= 768;
 	}
+
+	// 스킬스틱 모바일버전
+	window.addEventListener('scroll', () => {
+		let viewportWidth = window.innerWidth;
+		let scrollTopValue = 1025;
+	
+		if (viewportWidth <= 768 && window.scrollY >= scrollTopValue) {
+			$('.stick_html span').css({ width: '90%' });
+			$('.stick_js span').css({ width: '40%' });
+			$('.stick_jq span').css({ width: '50%' });
+			$('.stick_vue span').css({ width: '60%' });
+		}
+	});
 
 	// 팝업
 	$('.popup').hide();                 // 팝업 숨기기
@@ -146,11 +151,11 @@ $(function(){
 	// motion
 	$(function(){
 
-		const pTag1 = document.querySelector('.first-parallel');
-		const pTag2 = document.querySelector('.second-parallel');
+		let pTag1 = document.querySelector('.first-parallel');
+		let pTag2 = document.querySelector('.second-parallel');
 	
-		const textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
-		const textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
+		let textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
+		let textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 	
 		// 같은 내용을 맨 뒤에 반복해서 push하는 함수
 		function initTexts(element, textArray){
@@ -188,8 +193,6 @@ $(function(){
 	
 			window.requestAnimationFrame(animate);
 		}
-	
-		//무한반복
 		animate();
 
 	});

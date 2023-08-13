@@ -160,6 +160,7 @@ header ul.gnb li a{
     animation: ani_arrow 3s ease infinite;
     position: absolute;
     z-index: 5;
+    cursor: pointer;
 }
 
 @keyframes ani_arrow{
