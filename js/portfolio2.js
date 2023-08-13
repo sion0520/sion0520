@@ -1,29 +1,42 @@
 $(function(){
-    // 슬라이드
-	$('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplaySpeed: 3000,
-		dots:true,
-		centerMode: true,
-		setPosition:0,
 
-		// 슬라이드 반응형 : 모바일
-		responsive:[{
-			breakpoint: 768,
-			settings: {
-				arrows: true,
-				dots:true,
-				centerMode: true,
-				slidesToShow: 1
-			}
-		},]
-    });
-
-	// 구름 애니메이션
-	AOS.init({
-		duration: 1200,
+	// 팝업
+	$('.popup').hide();                 // 팝업 숨기기
+	$('.btn_close').click(function(){    // 팝업 닫기 버튼
+		$('.popup').hide();
 	});
+	$('.page_dining').click(function(){
+		if (!isMobile()) {
+			$('.popup_dining').show();
+		}
+	});
+	$('.page_spiderman').click(function(){
+		if (!isMobile()) {
+			$('.popup_spiderman').show();
+		}
+	});
+	$('.page_elemental').click(function(){
+		if (!isMobile()) {
+			$('.popup_elemental').show();
+		}
+	});
+	$('.page_cardnews').click(function(){
+		if (!isMobile()) {
+			$('.popup_krill').show();
+		}
+	});
+	$('.page_menu').click(function(){
+		if (!isMobile()) {
+			$('.popup_menu').show();
+		}
+	});
+
+	// header gnb 스크롤바 이동
+    $('.gnb li a').click(function(){
+        let name = $($(this).attr('href'));
+        let target = $($(this).attr('href')).offset().top
+        $('body,html').animate({scrollTop:target-150},1000);
+    });
 
 	// 화살표 클릭시 내려가기
 	$('.arrow').click(function() {
@@ -34,42 +47,15 @@ $(function(){
 		}
 	});
 
-
-    //탭메뉴(작업물 필터)
-	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
-	$('.tab li').click(function(){
-		$('.tab li').removeClass('on');
-		$(this).addClass('on');
-		$('.slider'). resize();
-		$('.slider'). slick('refresh');
-
-		let filter = $(this).index();
-
-		if(filter==0){
-			$('.slider_u, .slider_d, .front').hide();
-			$('.slider_p').show();
-		}else if(filter==1){
-			$('.slider_p, .slider_d, .front').hide();
-			$('.slider_u').show();
-		}else if(filter==2){
-			$('.slider_p, .slider_u, .slider_d').hide();
-			$('.front').show();
-		}else if(filter==3){
-			$('.slider_p, .slider_u, .front').hide();
-			$('.slider_d').show();
-		}
+	// 구름 애니메이션
+	AOS.init({
+		duration: 1200,
 	});
-
-	// 페이지 내에서 링크위치로 스크롤바 이동
-    $('.gnb li a').click(function(){
-        let name = $($(this).attr('href'));
-        let target = $($(this).attr('href')).offset().top
-        $('body,html').animate({scrollTop:target-150},1000);
-    });
 
 	// 스크롤바 위치 확인
 	$(window).scroll(function(){
 		let scroll = $(this).scrollTop();     
+
 		if(scroll==0 && scroll<2115){    // home 구간
 			$('.gnb li a').css({fontWeight:'300'});
             $('.gnb li:eq(0) a').css({fontWeight:'900'});
@@ -116,34 +102,49 @@ $(function(){
 		}
 	});
 
-	// 팝업
-	$('.popup').hide();                 // 팝업 숨기기
-	$('.btn_close').click(function(){    // 팝업 닫기 버튼
-		$('.popup').hide();
-	});
-	$('.page_dining').click(function(){
-		if (!isMobile()) {
-			$('.popup_dining').show();
-		}
-	});
-	$('.page_spiderman').click(function(){
-		if (!isMobile()) {
-			$('.popup_spiderman').show();
-		}
-	});
-	$('.page_elemental').click(function(){
-		if (!isMobile()) {
-			$('.popup_elemental').show();
-		}
-	});
-	$('.page_cardnews').click(function(){
-		if (!isMobile()) {
-			$('.popup_krill').show();
-		}
-	});
-	$('.page_menu').click(function(){
-		if (!isMobile()) {
-			$('.popup_menu').show();
+    // 슬라이드
+	$('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+		dots:true,
+		centerMode: true,
+		setPosition:0,
+
+		// 슬라이드 반응형 : 모바일
+		responsive:[{
+			breakpoint: 768,
+			settings: {
+				arrows: true,
+				dots:true,
+				centerMode: true,
+				slidesToShow: 1
+			}
+		},]
+    });
+
+	//탭메뉴(작업물 필터)
+	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
+	$('.tab li').click(function(){
+		$('.tab li').removeClass('on');
+		$(this).addClass('on');
+		$('.slider'). resize();
+		$('.slider'). slick('refresh');
+
+		let filter = $(this).index();
+
+		if(filter==0){
+			$('.slider_u, .slider_d, .front').hide();
+			$('.slider_p').show();
+		}else if(filter==1){
+			$('.slider_p, .slider_d, .front').hide();
+			$('.slider_u').show();
+		}else if(filter==2){
+			$('.slider_p, .slider_u, .slider_d').hide();
+			$('.front').show();
+		}else if(filter==3){
+			$('.slider_p, .slider_u, .front').hide();
+			$('.slider_d').show();
 		}
 	});
 
