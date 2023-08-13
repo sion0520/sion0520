@@ -148,7 +148,6 @@ $(function(){
 		}
 	});
 
-
 	// motion
 	$(function(){
 
@@ -172,9 +171,7 @@ $(function(){
 	
 		let count1 = 0;
 		let count2 = 0;
-	
-		// count가 element의 절반값 이상이면 count를 0으로 만들고 element도 원위치 시킴
-		// count가 element의 절반값 미만이면 count에 direction을 곱한만큼 이동+count return시킴
+
 		function marqueeText(count, element, direction){
 			if(count > element.scrollWidth / 2){
 				element.style.transform = 'translateX(0)';
@@ -184,7 +181,7 @@ $(function(){
 			return count;
 		}
 	
-		// 애니메이션 함수
+		// motion 애니메이션
 		function animate(){
 			count1++;
 			count2++;
