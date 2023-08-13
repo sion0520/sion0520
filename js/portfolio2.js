@@ -84,21 +84,15 @@ $(function(){
 		}
 	});
 
-	// 모바일인지 확인하는 함수
-	function isMobile() {
-		return window.innerWidth <= 768;
-	}
-
 	// 스킬스틱 모바일버전
 	window.addEventListener('scroll', () => {
 		let viewportWidth = window.innerWidth;
-		let scrollTopValue = 1025;
 	
-		if (viewportWidth <= 768 && window.scrollY >= scrollTopValue) {
+		if (viewportWidth <= 768 && window.scrollY >= 1025) {
 			$('.stick_html span').css({ width: '90%' });
 			$('.stick_js span').css({ width: '40%' });
 			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '60%' });
+			$('.stick_vue span').css({ width: '40%' });
 		}
 	});
 
