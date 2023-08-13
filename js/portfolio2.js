@@ -96,27 +96,6 @@ $(function(){
 		}
 	});
 
-    // 슬라이드
-	$('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplaySpeed: 3000,
-		dots:true,
-		centerMode: true,
-		setPosition:0,
-
-		// 슬라이드 반응형 : 모바일
-		responsive:[{
-			breakpoint: 768,
-			settings: {
-				arrows: true,
-				dots:true,
-				centerMode: true,
-				slidesToShow: 1
-			}
-		},]
-    });
-
 	//탭메뉴(작업물 필터)
 	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
 	$('.tab li').click(function(){
@@ -141,6 +120,27 @@ $(function(){
 			$('.slider_d').show();
 		}
 	});
+
+    // 슬라이드
+	$('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+		dots:true,
+		centerMode: true,
+		setPosition:0,
+
+		// 슬라이드 반응형 : 모바일
+		responsive:[{
+			breakpoint: 768,
+			settings: {
+				arrows: true,
+				dots:true,
+				centerMode: true,
+				slidesToShow: 1
+			}
+		},]
+    });
 
 	// motion
 	$(function(){
