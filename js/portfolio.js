@@ -1,44 +1,34 @@
 $(function(){
 
-	// 팝업
-	$('.popup').hide();                 // 팝업 숨기기
-	$('.btn_close').click(function(){    // 팝업 닫기 버튼
-		$('.popup').hide();
-	});
-	$('.page_dining').click(function(){
-		if (!isMobile()) {
-			$('.popup_dining').show();
-		}
-	});
-	$('.page_spiderman').click(function(){
-		if (!isMobile()) {
-			$('.popup_spiderman').show();
-		}
-	});
-	$('.page_elemental').click(function(){
-		if (!isMobile()) {
-			$('.popup_elemental').show();
-		}
-	});
-	$('.page_cardnews').click(function(){
-		if (!isMobile()) {
-			$('.popup_krill').show();
-		}
-	});
-	$('.page_menu').click(function(){
-		if (!isMobile()) {
-			$('.popup_menu').show();
-		}
-	});
+	// 모바일인지 확인하는 함수
+	function isMobile() {
+		return window.innerWidth <= 768;
+	}
 
-	// header gnb 스크롤바 이동
+	// 다이닝옵션 팝업
+	$(".dining").click(function () {
+        Swal.fire({
+			imageUrl: './images/popup/diningoption.png',
+			imageHeight: 1500,
+			imageAlt: '다이닝옵션'
+		})
+    });
+	$(".krill").click(function () {
+        Swal.fire({
+			imageUrl: './images/popup/krillwrap.png',
+			imageHeight: 450,
+			imageAlt: '다이닝옵션'
+		})
+    });
+
+	// header gnb 스크롤 이동
     $('.gnb li a').click(function(){
         let name = $($(this).attr('href'));
         let target = $($(this).attr('href')).offset().top
         $('body,html').animate({scrollTop:target-150},1000);
     });
 
-	// 화살표 클릭시 내려가기
+	// 화살표 클릭시 이동
 	$('.arrow').click(function() {
 		if ($(window).width() <= 768) {
 			$('body, html').animate({ scrollTop: 500 }, 1200);
