@@ -5,7 +5,7 @@ $(function(){
 		return window.innerWidth <= 768;
 	}
 
-	// 다이닝옵션 팝업
+	// 팝업
 	$(".dining").click(function () {
         Swal.fire({
 			imageUrl: './images/popup/diningoption.png',
@@ -65,10 +65,9 @@ $(function(){
 
 		// 스킬스틱 pc버전
 		if(scroll>=1896 && scroll<3599){
-			$('.stick_html span').css({ width: '90%' });
-			$('.stick_js span').css({ width: '40%' });
-			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '40%' });
+			$('.stick_90 span').css({ width: '90%' });
+			$('.stick_40 span').css({ width: '40%' });
+			$('.stick_50 span').css({ width: '50%' });
 		}else{
 			$('.stick span').css({ width: '0%' });
 		}
@@ -79,10 +78,9 @@ $(function(){
 		let viewportWidth = window.innerWidth;
 	
 		if (viewportWidth <= 768 && window.scrollY >= 1025) {
-			$('.stick_html span').css({ width: '90%' });
-			$('.stick_js span').css({ width: '40%' });
-			$('.stick_jq span').css({ width: '50%' });
-			$('.stick_vue span').css({ width: '40%' });
+			$('.stick_90 span').css({ width: '90%' });
+			$('.stick_40 span').css({ width: '40%' });
+			$('.stick_50 span').css({ width: '50%' });
 		}
 	});
 
