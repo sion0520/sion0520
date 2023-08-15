@@ -311,15 +311,15 @@ header ul.gnb li a{
 }
 
 .cover:nth-child(1){
-    background-color: #5980C3;
+    background-color: #BFCFEA;
     transform: rotate(1deg);
-    color: #333;
 }
 
 .cover:nth-child(2){
-    background-color: #BFCFEA;
+    background-color: #5980C3;
     justify-content: flex-end;
     transform: rotate(-1deg);
+    color: #333;
 }
 
 .cover p{
