@@ -136,14 +136,14 @@ $(function(){
 		let pTag1 = document.querySelector('.first-parallel');
 		let pTag2 = document.querySelector('.second-parallel');
 	
-		let textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
-		let textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
+		let textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
+		let textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 	
 		// 같은 내용을 맨 뒤에 반복해서 push하는 함수
 		function initTexts(element, textArray){
 			textArray.push(...textArray);
 			for(let i = 0; i < textArray.length; i++){
-				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0`;
+				element.innerText += `${textArray[i]}\u00A0\u00A0\u00A0`;
 			}
 		}
 
