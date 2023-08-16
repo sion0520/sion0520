@@ -128,9 +128,11 @@ $(function(){
 	// motion
 	$(function(){
 
+		// 불러오기
 		let pTag1 = document.querySelector('.first-parallel');
 		let pTag2 = document.querySelector('.second-parallel');
 	
+		// 텍스트 내용
 		let textArr1 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 		let textArr2 = 'ZIONS PORTFOLIO ZIONS PORTFOLIO'.split(' ');
 	
@@ -142,7 +144,7 @@ $(function(){
 			}
 		}
 
-		//pTag에 textArr를 삽입
+		//pTag에 textArr를 삽입(push)
 		initTexts(pTag1, textArr1);
 		initTexts(pTag2, textArr2);
 	
@@ -150,7 +152,7 @@ $(function(){
 		let count2 = 0;
 
 		function marqueeText(count, element, direction){
-			if(count > element.scrollWidth / 2){
+			if(count > element.scrollWidth ){
 				element.style.transform = 'translateX(0)';
 				count = 0;
 			}
@@ -168,6 +170,7 @@ $(function(){
 	
 			window.requestAnimationFrame(animate);
 		}
+		// 무한반복
 		animate();
 
 	});
