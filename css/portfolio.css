@@ -538,6 +538,9 @@ header ul.gnb li a{
 
 #contact ul.adress li{
     position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2.8;
 }
 
 #contact ul.adress li a{
