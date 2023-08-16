@@ -152,7 +152,7 @@ $(function(){
 		let count2 = 0;
 
 		function marqueeText(count, element, direction){
-			if(count > element.scrollWidth ){
+			if(count > element.scrollWidth /2){
 				element.style.transform = 'translateX(0)';
 				count = 0;
 			}
