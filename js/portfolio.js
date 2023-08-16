@@ -1,10 +1,5 @@
 $(function(){
 
-	// 모바일인지 확인하는 함수
-	function isMobile() {
-		return window.innerWidth <= 768;
-	}
-
 	// 팝업
 	$(".dining").click(function () {
         Swal.fire({
