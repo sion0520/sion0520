@@ -1,3 +1,11 @@
+/* 노트북 */
+@media (min-width:1024px) and (max-width:1278px){
+
+
+
+}
+
+
 /* 모바일 */
 @media (min-width:320px) and (max-width:768px){
     
@@ -248,9 +256,9 @@
         display: block;
     }
 
-    #contact ul.adress li a{
-        font-size: 16px;
-        line-height: 25px;
+    #contact ul.adress li{
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 
     footer{
