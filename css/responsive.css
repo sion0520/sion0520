@@ -57,7 +57,6 @@
     width: 100%;
 }
 
-/* --------슬릭------------- */
 .slick-slide{
     width: 450px;
 }
@@ -76,7 +75,6 @@
     height: 100%;
 }
 
-/* 제목 커스텀 */
 .slider h3{
     font-size: 30px;
     margin-bottom: 40px;
