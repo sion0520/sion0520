@@ -1,10 +1,116 @@
 /* 노트북 */
 @media (min-width:1024px) and (max-width:1278px){
 
+.inner{
+    width: 1080px;
+}
+
+#home .my{
+    font-size: 70px;
+}
+
+#home h2{
+    font-size: 190px;
+}
+
+#home .slogan{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+#home .cloud1{
+    top: 876px;
+}
+
+#home .cloud2{
+    top: 1300px;
+}
+
+#home .cloud3{
+    top: 1495px;
+}
+
+#about .card{
+    width: 1080px;
+    height: 801px;
+    border-radius: 0px 25px 25px 25px;
+    padding: 90px 95px;
+}
+
+#about .left img{
+    width: 333px;
+}
+
+#work ul.tab{
+    width: 430px;
+    height: 500px;
+    padding: 111px 0 0 0;
+    box-sizing: border-box;
+}
+#work ul.tab li{
+    padding: 0 0 0 232px;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+#work ul.tab li.on::after{
+    width: 100%;
+}
+
+/* --------슬릭------------- */
+.slick-slide{
+    width: 450px;
+}
+
+.slick-slide img{
+    width: 332px;
+    height: 186px;
+}
+
+.slick-center{
+    width: 519px;
+}
+
+.slick-center img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 제목 커스텀 */
+.slider h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.slick-prev{
+    position: absolute;
+    left: 404px;
+    bottom:-90px;
+    background: url("../images/icon/icon_slidearrow_left.png")no-repeat center center;
+}
+
+.slick-next{
+    position: absolute;
+    bottom: -90px;
+    right:404px;
+    background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
+}
+
+.front{
+    margin: 228px 0 0 473px;
+}
+
+.front .item h3{
+    font-size: 30px;
+}
+
+.front .item a img{
+    width: 393px;
+    height: 221px;
+}
 
 
 }
-
 
 /* 모바일 */
 @media (min-width:320px) and (max-width:768px){
