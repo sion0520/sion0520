@@ -113,6 +113,10 @@
 /* 모바일 */
 @media (min-width:320px) and (max-width:768px){
     
+    .inner{
+        width: 332px;
+    }
+    
     header{
         padding: 0;
     }
@@ -125,10 +129,6 @@
 
     header ul.gnb{
         display: none;
-    }
-
-    .inner{
-        width: 332px;
     }
 
     #home .my{
