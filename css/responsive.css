@@ -340,6 +340,23 @@
         transform: translateX(-50%);
     }
 
+    #uiux h2{
+        font-size: 40px;
+    }
+
+    #uiux ul li a{
+        width: 166px;
+        height: 93px;
+    }
+
+    #uiux ul li a img{
+        border-radius: 4px;
+    }
+
+    .description, .description p{
+        display: none;
+    }
+
     #contact{
         padding: 100px 0;
         border: none;

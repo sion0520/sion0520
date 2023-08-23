@@ -1,13 +1,6 @@
 $(function(){
 
 	// 팝업
-	$(".dining").click(function () {
-        Swal.fire({
-			imageUrl: './images/popup/diningoption.png',
-			imageHeight: 1500,
-			imageAlt: '다이닝옵션'
-		})
-    });
 	$(".krill").click(function () {
         Swal.fire({
 			imageUrl: './images/popup/krillwrap.png',
