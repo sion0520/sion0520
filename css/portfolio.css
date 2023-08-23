@@ -572,6 +572,7 @@ header ul.gnb li a{
     margin-bottom: 100px;
     opacity: 0.1;
     position: relative;
+    font-family: 'Cafe24ClassicType-Regular';
 }
 
 #contact h2::before{
