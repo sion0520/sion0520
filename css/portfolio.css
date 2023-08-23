@@ -299,7 +299,7 @@ header ul.gnb li a{
 
 /* -------------------------motion------------------------------- */
 .motion {
-    font-family: Cafe24ClassicType-Regular;
+    font-family: 'Cafe24ClassicType-Regular';
     padding: 20px 0;
     box-sizing: border-box;
     margin: 200px 0 200px 0;
@@ -356,6 +356,7 @@ header ul.gnb li a{
     cursor: pointer;
     text-align: left;
     position: relative;
+    font-family: 'Cafe24ClassicType-Regular';
 }
 
 #work ul.tab li.on::after{
@@ -406,7 +407,6 @@ header ul.gnb li a{
 .slick-center img{
     width: 604px;
     height: 338px;
-    position: relative;
 }
 
 /* 제목 커스텀 */
@@ -503,7 +503,62 @@ header ul.gnb li a{
     height: 338px;
     border-radius:16px;
 }
+/* ------------------------ui/ux--------------- */
+#uiux{
+    margin-top: 500px;
+    color: #fff;
+}
 
+#uiux h2{
+    font-size: 100px;
+    font-family: 'Cafe24ClassicType-Regular';
+    text-align: center;
+    margin-bottom: 40px;
+}
+#uiux ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#uiux ul li a{
+    position: relative;
+    display: block;
+    width: 740px;
+    height: 418px;
+}
+#uiux ul li a img{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0,0,0, 0.8);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    border: 5px solid #BFCFEA;
+}
+.description p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 /* ---------------------------contact----------------------------- */
 #contact{
     margin-top: 200px;

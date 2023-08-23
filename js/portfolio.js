@@ -80,7 +80,7 @@ $(function(){
 	});
 
 	//탭메뉴(작업물 필터)
-	$('.slider_u, .slider_d, .front').hide();  //슬라이드 숨기기
+	$('.slider_d, .front').hide();  //슬라이드 숨기기
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on');
 		$(this).addClass('on');
@@ -88,18 +88,14 @@ $(function(){
 		$('.slider'). slick('refresh');
 
 		let filter = $(this).index();
-
 		if(filter==0){
-			$('.slider_u, .slider_d, .front').hide();
+			$('.slider_d, .front').hide();
 			$('.slider_p').show();
 		}else if(filter==1){
-			$('.slider_p, .slider_d, .front').hide();
-			$('.slider_u').show();
-		}else if(filter==2){
-			$('.slider_p, .slider_u, .slider_d').hide();
+			$('.slider_p, .slider_d').hide();
 			$('.front').show();
-		}else if(filter==3){
-			$('.slider_p, .slider_u, .front').hide();
+		}else if(filter==2){
+			$('.slider_p, .front').hide();
 			$('.slider_d').show();
 		}
 	});
@@ -174,4 +170,12 @@ $(function(){
 		animate();
 
 	});
+
+	// ui/ux design
+	$('#uiux ul li a').mouseover(function(){
+		$(this).find('.description').stop().fadeIn()
+	})
+	$('#uiux ul li a').mouseleave(function(){
+		$(this).find('.description').stop().fadeOut()
+	})
 });
