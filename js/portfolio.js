@@ -33,7 +33,6 @@ $(function(){
 	// 스크롤바 위치 확인
 	$(window).scroll(function(){
 		let scroll = $(this).scrollTop();     
-
 		if(scroll==0 && scroll<2115){    // home 구간
 			$('.gnb li a').css({fontWeight:'300'});
             $('.gnb li:eq(0) a').css({fontWeight:'900'});
@@ -41,11 +40,11 @@ $(function(){
 		}else if(scroll >= 2116 && scroll<3797){   // about 구간
 			$('.gnb li a').css({fontWeight:'300'});
             $('.gnb li:eq(1) a').css({fontWeight:'900'});
-		}else if(scroll >= 3798 && scroll<4284){  // work 구간
+		}else if(scroll >= 3798 && scroll<6090){  // work 구간
 			$('.gnb li a').css({fontWeight:'300'}); 
             $('.gnb li:eq(2) a').css({fontWeight:'900'});
 			$('.skill span').css({width:0});
-		}else if(scroll >= 4284){    // contact 구간
+		}else if(scroll >= 6091){    // contact 구간
 			$('.gnb li a').css({fontWeight:'300'}); 
             $('.gnb li:eq(3) a').css({fontWeight:'900'});
 			$('.skill span').css({width:0});
@@ -73,7 +72,7 @@ $(function(){
 	});
 
 	//탭메뉴(작업물 필터)
-	$('.slider_d, .front').hide();  //슬라이드 숨기기
+	$('.slider_d, .front').hide();  //숨기기
 	$('.tab li').click(function(){
 		$('.tab li').removeClass('on');
 		$(this).addClass('on');

@@ -107,6 +107,14 @@
     height: 221px;
 }
 
+#uiux ul li a{
+    width: 519px;
+    height: 293px;
+}
+
+.description {
+    border: 10px solid #BFCFEA;
+}
 
 }
 
