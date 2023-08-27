@@ -5,7 +5,7 @@ $(function(){
         Swal.fire({
 			imageUrl: './images/popup/krillwrap.png',
 			imageHeight: 450,
-			imageAlt: '다이닝옵션'
+			imageAlt: '카드뉴스'
 		})
     });
 
@@ -13,7 +13,7 @@ $(function(){
     $('.gnb li a').click(function(){
         let name = $($(this).attr('href'));
         let target = $($(this).attr('href')).offset().top
-        $('body,html').animate({scrollTop:target-150},1000);
+        $('body,html').animate({scrollTop:target-100},1000);
     });
 
 	// 화살표 클릭시 이동
@@ -32,7 +32,8 @@ $(function(){
 
 	// 스크롤바 위치 확인
 	$(window).scroll(function(){
-		let scroll = $(this).scrollTop();     
+		let scroll = $(this).scrollTop();    
+		console.log(scroll)
 		if(scroll==0 && scroll<2115){    // home 구간
 			$('.gnb li a').css({fontWeight:'300'});
             $('.gnb li:eq(0) a').css({fontWeight:'900'});
@@ -44,7 +45,7 @@ $(function(){
 			$('.gnb li a').css({fontWeight:'300'}); 
             $('.gnb li:eq(2) a').css({fontWeight:'900'});
 			$('.skill span').css({width:0});
-		}else if(scroll >= 6091){    // contact 구간
+		}else if(scroll >= 5682){    // contact 구간
 			$('.gnb li a').css({fontWeight:'300'}); 
             $('.gnb li:eq(3) a').css({fontWeight:'900'});
 			$('.skill span').css({width:0});
@@ -63,7 +64,6 @@ $(function(){
 	// 스킬스틱 모바일버전
 	window.addEventListener('scroll', () => {
 		let viewportWidth = window.innerWidth;
-	
 		if (viewportWidth <= 768 && window.scrollY >= 1025) {
 			$('.stick_90 span').css({ width: '90%' });
 			$('.stick_40 span').css({ width: '40%' });
