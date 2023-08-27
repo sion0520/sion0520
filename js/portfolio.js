@@ -10,7 +10,7 @@ $(function(){
     });
 
 	// header gnb 스크롤 이동
-    $('.gnb li a').click(function(){
+    ('.gnb li a').click(function(){
         let name = $($(this).attr('href'));
         let target = $($(this).attr('href')).offset().top
         $('body,html').animate({scrollTop:target-100},1000);
