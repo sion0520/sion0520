@@ -108,7 +108,7 @@ $(function(){
 		responsive:[{
 			breakpoint: 768,
 			settings: {
-				arrows: true,
+				arrows: false,
 				dots:true,
 				centerMode: true,
 				slidesToShow: 1

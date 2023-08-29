@@ -16,7 +16,6 @@ body{
     background: #333;
     color: #fff;
     position: relative;
-    min-width: 100vw;
 }
 .inner{
     width: 1520px;
@@ -181,7 +180,7 @@ header ul.gnb li a{
 
 #about h4{
     color: #FFF;
-    font-family: Cafe24ClassicType-Regular;
+    font-family: 'Cafe24ClassicType-Regular';
     font-size: 50px;
     font-weight: 400;
     line-height: normal;
@@ -368,10 +367,6 @@ header ul.gnb li a{
 }
 
 /* 슬라이드 기본 */
-.slider{
-    
-}
-
 .slider a{
     display: block;
     width: 480px;
@@ -474,7 +469,7 @@ header ul.gnb li a{
 
 /* ------------------------ui/ux--------------- */
 #uiux{
-    margin-top: 500px;
+    margin-top: 200px;
     color: #fff;
 }
 
