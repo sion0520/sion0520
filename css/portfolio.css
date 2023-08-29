@@ -16,6 +16,7 @@ body{
     background: #333;
     color: #fff;
     position: relative;
+    min-width: 100vw;
 }
 .inner{
     width: 1520px;
@@ -135,7 +136,7 @@ header ul.gnb li a{
 #home .cloud3{
     position: absolute;
     right: 0;
-    top:2042px;
+    top:1900px;
 }
 
 #home .introduce{
@@ -331,6 +332,9 @@ header ul.gnb li a{
 /* ------------------------work---------------------------- */
 #work{
     position: relative;
+    width: 100%;
+    background: teal;
+
 }
 
 /* 탭메뉴 */
