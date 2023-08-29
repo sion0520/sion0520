@@ -333,40 +333,28 @@ header ul.gnb li a{
 #work{
     position: relative;
     width: 100%;
-    background: teal;
-
 }
 
-/* 탭메뉴 */
+/* 탭메뉴*/
 #work ul.tab{
-    width: 640px;
-    height: 500px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 90px 79px 0 0;
-    box-sizing: border-box;
-    z-index: 2;
-    background: #333;
+    width: 480px;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #work ul.tab li{
-    color: #fff;
     font-size: 24px;
     font-weight: 500;
-    display: block;
-    margin-bottom: 45px;
-    margin-left: 410px;
-    cursor: pointer;
-    text-align: left;
-    position: relative;
     font-family: 'Cafe24ClassicType-Regular';
+    position: relative;
+    cursor: pointer;
 }
 
 #work ul.tab li.on::after{
     content: '';
     background: #5980C3;
-    width: 240px;
+    width: 100%;
     height: 5px;
     position: absolute;
     bottom: -10px;
@@ -379,51 +367,27 @@ header ul.gnb li a{
     100%{left: 0px;}
 }
 
-/* 슬라이드 */
+/* 슬라이드 기본 */
 .slider{
-    width: 100%;
-    height: 408px;
-    margin-top:228px ;
+    
 }
 
 .slider a{
-    position: relative;
+    display: block;
+    width: 480px;
 }
 
-.slick-slide{
-    max-width: 725px;
-    height: 408px;
-}
-
-.slick-slide img{
-    border-radius:16px;
-    margin: 0 auto;
-    width: 483px; 
-    height: 270px;
-}
-
-.slick-center{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.slick-center img{
-    width: 604px;
-    height: 338px;
+.slider img{
+    width: 480px;
+    border-radius:16px ;
 }
 
 /* 제목 커스텀 */
 .slider h3{
     color: #fff;
-    font-size: 50px;
-    font-weight: 800;
-    margin-bottom: 40px;
-    opacity: 0;
-}
-
-.slick-center h3{
-    opacity: 1;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .slider h3 span{  
@@ -457,7 +421,7 @@ header ul.gnb li a{
 }
 
 /* 화살표 커스텀 */
-.slick-arrow{
+/* .slick-arrow{
     z-index: 2;
     width: 48px;
     height: 48px;
@@ -476,37 +440,38 @@ header ul.gnb li a{
     bottom: -90px;
     right:725px;
     background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
-}
+} */
 
 /* 디자인 이미지 팝업 */
-.dining, .krill{
+.krill{
     cursor: pointer;
 }
 
-/* 프론트엔드 */
+/* 프론트 작업물 */
 .front{
-    height: 408px;
-    margin: 228px 0 0 660px;
+    height: 340px;
 }
-
+.front .item{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .front .item h3{
     color: #fff;
-    font-size: 50px;
+    font-size: 28px;
     font-weight: 800;
     margin-bottom: 40px;
 }
-
 .front .item h3 span{  
     color: #5980C3;
     font-size: 50px;
     margin-right: 10px;
 }
-
-.front .item a img{
-    width: 604px;
-    height: 338px;
-    border-radius:16px;
+.front .item img{
+    width: 480px;
+    border-radius: 16px;
 }
+
 /* ------------------------ui/ux--------------- */
 #uiux{
     margin-top: 500px;

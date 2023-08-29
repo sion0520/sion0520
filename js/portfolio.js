@@ -99,7 +99,9 @@ $(function(){
         slidesToScroll: 1,
         autoplaySpeed: 3000,
 		dots:true,
-		centerMode: true,
+		arrows: false,
+		// centerMode: true,
+		// centerPadding: '60px',
 		setPosition:0,      //탭 안에 슬릭이 있을 경우
 
 		// 슬라이드 반응형 : 모바일
