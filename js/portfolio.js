@@ -111,7 +111,8 @@ $(function(){
 				arrows: false,
 				dots:true,
 				centerMode: true,
-				slidesToShow: 1
+				slidesToShow: 1,
+				centerMode: true,
 			}
 		},]
     });
@@ -173,4 +174,6 @@ $(function(){
 	$('#uiux ul li a').mouseleave(function(){
 		$(this).find('.description').stop().fadeOut()
 	})
+
+	
 });
