@@ -1,7 +1,5 @@
 ### 🚀 About Me
 
-#### 웹 퍼블리셔가 되고싶은 안시온 입니다.
-
 ![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=1)
 
 ### 📚 Skills
