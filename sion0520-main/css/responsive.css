@@ -1,0 +1,324 @@
+/* 노트북 */
+@media (max-width:1278px){
+
+.inner{
+    width: 1080px;
+}
+
+#home .my{
+    font-size: 70px;
+}
+
+#home h2{
+    font-size: 190px;
+}
+
+#home .slogan{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+#home .cloud1{
+    top: 876px;
+}
+
+#home .cloud2{
+    top: 1400px;
+}
+
+#home .cloud3{
+    top: 1600px;
+}
+
+#about .card{
+    width: 1080px;
+    height: 801px;
+    border-radius: 0px 25px 25px 25px;
+    padding: 90px 95px;
+}
+
+#about .left img{
+    width: 333px;
+}
+
+.slider a{
+    width: 333px;
+}
+
+.slider img{
+    width: 333px;
+}
+.front{
+    height: 257px;
+}
+
+.front .item a img{
+    width: 333px;
+}
+
+#uiux ul li a{
+    width: 519px;
+    height: 293px;
+}
+
+.description {
+    border: 10px solid #BFCFEA;
+}
+
+}
+
+/* ---------------------------------------모바일--------------------------------- */
+@media (min-width:320px) and (max-width:768px){
+    
+    .inner{
+        width: 332px;
+    }
+    
+    header{
+        padding: 0;
+    }
+
+    header h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header ul.gnb{
+        display: none;
+    }
+
+    #home .my{
+        font-size: 30px;
+    }
+
+    #home h2{
+        font-size: 50px;
+    }
+
+    #home h2::before{
+        height: 2px;
+    }
+
+    #home .slogan{
+        font-size: 16px;
+        margin: 20px 0;
+        letter-spacing: -0.16px;
+        white-space: normal;
+    }
+
+    #home .arrow{
+        width: 24px;
+        height: 24px;
+        margin-top: 10px;
+    }
+
+    #home .cloud1{
+        width: 86px;
+        right: 70px;
+        top:500px;
+        right: 0;
+    }
+
+    #home .cloud2{
+        width: 86px;
+        top: 800px;
+    }
+
+    #home .cloud3{
+        width: 86px;
+        top: 900px;
+    }
+
+    #home .introduce{
+        margin: 400px 0;
+    }
+
+    #home .introduce .mark_start{
+        width: 24px;
+    }
+
+    #home .introduce .mark_end{
+        width: 24px;
+    }
+
+    #home .introduce p{
+        font-size: 18px;
+        letter-spacing: 0px;
+        line-height: normal;
+    }
+
+    #about h4{
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #about .card{
+        width: 100%;
+        height: 550px;
+        border-radius: 0px 25px 25px 25px;
+        padding: 40px 10px;
+        display: block;
+    }
+
+    #about .left  img{
+        width: 88px;
+        float: left;
+        margin: 0 20px 0 0;
+    }
+
+    #about ul.left{
+        margin-top: 10px;
+    }
+
+    #about ul.left li{
+        font-size: 14px;
+        margin-top:10px ;
+    }
+
+    #about ul.right{
+        margin-top:10px ;
+        float: right;
+    }
+
+    #about ul.right li{
+        font-size: 14px;
+        margin: 10px 0 0 10px;
+    }
+
+    #about .skill{
+        margin-top: 40px;
+        padding:  0;
+    }
+    #about .skill h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #about ul.program li img{
+        width: 24px;
+    }
+
+    #about ul.program li .stick{
+        height: 10px;
+    }
+
+    #about ul.program li .stick span{
+        height: 8px;
+    }
+
+    #work ul.tab{
+        width: 335px;
+        height: 25px;
+    }
+
+    #work ul.tab li{
+        font-size: 18px;
+    }
+
+    #work ul.tab li.on::after{
+        width: 100%;
+        bottom: 0;
+    }
+
+    .slick-slider img{
+        width: 232px;
+        opacity: 0;
+    }
+
+    .slick-slider h3{
+        opacity: 0;
+    }
+
+    .slick-center img{
+        opacity: 1;
+    }
+
+    .slick-center h3{
+        opacity: 1;
+    }
+
+    .slider h3{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .slider h3 span{
+        font-size: 20px;
+    }
+
+    .slick-dots button{
+        width: 20px;
+        height: 6px;
+    }
+
+    .slick-active button{
+        width: 40px;
+    }
+
+    .front{
+        height: 178px;
+    }
+
+    .front .item h3{
+        text-align: center;
+        font-size: 18px; 
+    }
+
+    .front .item h3 span{
+        font-size: 20px;
+    }
+
+    .front .item a img{
+        width: 232px;
+    }
+
+    #uiux h2{
+        font-size: 40px;
+    }
+
+    #uiux ul li a{
+        width: 162px;
+        height: 104px;
+    }
+
+    #uiux ul li a img{
+        border-radius: 4px;
+    }
+
+    .description, .description p{
+        display: none;
+    }
+
+    #contact{
+        padding: 100px 0;
+        border: none;
+    }
+
+    #contact h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    #contact h2::before{
+        width: 100%;
+        height: 3px;
+        top: 50px;
+    }
+
+    #contact ul.adress{
+        display: block;
+    }
+
+    #contact ul.adress li{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        font-size: 13px;
+        padding: 10px 20px;
+        letter-spacing: -0.6px;
+    }
+}

@@ -1,0 +1,600 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'SUITE', sans-serif;
+    background: #333;
+    color: #fff;
+    position: relative;
+}
+.inner{
+    width: 1520px;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a{
+    text-indent: -99999px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/logo/logo.png")no-repeat center center;
+}
+
+header ul.gnb{
+    display: flex;
+    gap: 50px;
+}
+
+header ul.gnb li a{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* -----------------------home------------------------------- */
+#home{
+    text-align: center;
+}
+
+#home .inner{
+    position: relative;
+}
+
+#home .my{
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 300;
+    margin-top: 180px;
+}
+
+#home h2{
+    color: #FFF;
+    font-size: 260px;
+    font-weight: 300;
+    position: relative;
+}
+
+#home h2::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+#home .slogan{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 40px 0;
+    line-height: normal;
+}
+
+#home .arrow{
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+    animation: ani_arrow 3s ease infinite;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+@keyframes ani_arrow{
+    0%{margin-top: 30px;}
+    50%{margin-top: 50px;}
+    100%{margin-top: 30px;}
+}
+
+/* 구름 */
+#home .cloud1{
+    position: absolute;
+    right: 263px;
+    top:1000px;
+}
+
+#home .cloud2{
+    position: absolute;
+    left: 0;
+    top: 1752px;
+}
+
+#home .cloud3{
+    position: absolute;
+    right: 0;
+    top:1900px;
+}
+
+#home .introduce{
+    width: 100%;
+    height: 250px;
+    margin: 650px 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#home .introduce .mark_start{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#home .introduce .mark_end{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#home .introduce p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2.8px;
+    line-height: normal;
+}
+
+/* ----------------------about----------------------------- */
+#about{
+    margin-top: 493px;
+}
+
+#about .inner{
+    position: relative;
+}
+
+#about h4{
+    color: #FFF;
+    font-family: 'Cafe24ClassicType-Regular';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    display: inline-flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#about .card{
+    width: 100%;
+    display: flex;
+    height: 801px;
+    padding: 90px 260px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: #555;
+    border-radius: 0px 100px 100px 100px;
+}
+
+#about .entire{
+    display: flex;
+}
+
+#about ul.left{
+    margin-top: 36px;
+}
+
+#about ul.left li{
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#about ul.left li:first-child{
+    margin-bottom: 0;
+}
+
+#about ul.right{
+    margin-top: 36px;
+}
+
+#about ul.right li{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0 0 20px;
+}
+
+#about ul.right li:first-child{
+    margin-bottom: 0;
+}
+
+#about .skill h3{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#about ul.program li{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#about ul.program li:last-child{
+    margin-bottom: 0;
+}
+
+/* 스킬 스틱 */
+#about ul.program li .stick{
+    width: 415px;
+    height: 20px;
+    background: #BFCFEA;
+    border-radius: 20px;
+    text-indent: -99999px;
+}
+
+#about ul.program li .stick_90 span{
+    display: block;
+    width: 0;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    transition: width ease 3s;
+}
+
+#about ul.program li .stick_40 span{
+    display: block;
+    width: 0;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    transition: width ease 3s;
+}
+
+#about ul.program li .stick_50 span{
+    display: block;
+    width: 0;
+    height: 18px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #BFCFEA;
+    background: #5980C3;
+    border-radius:20px ;
+    transition: width ease 3s;
+}
+
+/* -------------------------motion------------------------------- */
+.motion {
+    font-family: 'Cafe24ClassicType-Regular';
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin: 200px 0 200px 0;
+    overflow: hidden;
+}
+
+.cover{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.cover:nth-child(1){
+    background-color: #BFCFEA;
+    transform: rotate(1deg);
+}
+
+.cover:nth-child(2){
+    background-color: #5980C3;
+    justify-content: flex-end;
+    transform: rotate(-1deg);
+    color: #333;
+}
+
+.cover p{
+    padding: 10px 0;
+    font-size: 10vw;
+    font-weight: 300;
+}
+/* ------------------------work---------------------------- */
+#work{
+    position: relative;
+    width: 100%;
+}
+
+/* 탭메뉴*/
+#work ul.tab{
+    width: 480px;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#work ul.tab li{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Cafe24ClassicType-Regular';
+    position: relative;
+    cursor: pointer;
+}
+
+#work ul.tab li.on::after{
+    content: '';
+    background: #5980C3;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    animation: underline .5s ease-in-out;
+}
+
+@keyframes underline{
+    0%{left: -410px;}
+    100%{left: 0px;}
+}
+
+/* 슬라이드 기본 */
+.slider a{
+    display: block;
+    width: 480px;
+}
+
+.slider img{
+    width: 480px;
+    border-radius:16px ;
+}
+
+/* 제목 커스텀 */
+.slider h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slider h3 span{  
+    color: #5980C3;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+/* 페이지버튼 커스텀 */
+.slick-dots{
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-80px;
+}
+
+.slick-dots button{
+    width: 40px;
+    height: 13px;
+    text-indent: -99999px;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.slick-active button{
+    width: 80px;
+    height: 13px;
+    background: #5980C3;
+}
+
+/* 화살표 커스텀 */
+/* .slick-arrow{
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    text-indent: -99999px;
+}
+
+.slick-prev{
+    position: absolute;
+    left: 725px;
+    bottom:-90px;
+    background: url("../images/icon/icon_slidearrow_left.png")no-repeat center center;
+}
+
+.slick-next{
+    position: absolute;
+    bottom: -90px;
+    right:725px;
+    background: url("../images/icon/icon_slidearrow_right.png")no-repeat center center;
+} */
+
+/* 디자인 이미지 팝업 */
+.krill{
+    cursor: pointer;
+}
+
+/* 프론트 작업물 */
+.front{
+    height: 340px;
+}
+.front .item{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.front .item h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.front .item h3 span{  
+    color: #5980C3;
+    font-size: 50px;
+    margin-right: 10px;
+}
+.front .item img{
+    width: 480px;
+    border-radius: 16px;
+}
+
+/* ------------------------ui/ux--------------- */
+#uiux{
+    margin-top: 200px;
+    color: #fff;
+}
+
+#uiux h2{
+    font-size: 100px;
+    font-family: 'Cafe24ClassicType-Regular';
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#uiux ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#uiux ul li a{
+    position: relative;
+    display: block;
+    width: 740px;
+    height: 418px;
+}
+
+#uiux ul li a img{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0,0,0, 0.9);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 20px solid #BFCFEA;
+}
+
+.description p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ---------------------------contact----------------------------- */
+#contact{
+    margin-top: 200px;
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+
+#contact h2{
+    font-size: 200px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    opacity: 0.1;
+    position: relative;
+    font-family: 'Cafe24ClassicType-Regular';
+}
+
+#contact h2::before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 211px ;
+}
+
+#contact ul.adress{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact ul.adress li{
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2.8;
+}
+
+#contact ul.adress li a{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2.8;
+}
+
+#contact ul.adress li::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: all 0.5s ease-in-out ;
+}
+
+#contact ul.adress li:hover::before{
+    width: 100%;
+}
+
+/* --------------------------footer----------------------- */
+footer{
+    height: 60px;
+    border-top: 1px solid #555;
+    padding: 20px;
+    box-sizing: border-box;
+}
+footer p{   
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+}
